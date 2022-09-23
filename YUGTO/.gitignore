@@ -71,6 +71,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+git rm --cached -r UserSettings/
+
 *.dwlt
 *.dwlt
 YUGTO/UserSettings/Layouts/default-2021.dwlt
