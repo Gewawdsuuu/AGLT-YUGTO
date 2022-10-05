@@ -7,7 +7,6 @@ public class MenuHandler : MonoBehaviour
 {
     [Header("Canvas Settings")]
     [SerializeField] public Canvas settingsCanvas;
-    [SerializeField] public bool a = false;
 
     [Header("Disabled Buttons")]
     [SerializeField] private Button settingsButton;
@@ -25,7 +24,13 @@ public class MenuHandler : MonoBehaviour
     [SerializeField] private Color normalAlpha;
     [SerializeField] private Color reducedAlpha;
 
-    // Private Methods
+    [Header("Hero Button Settings")]
+    [SerializeField] private GameObject MenuGroup;
+    [SerializeField] private GameObject HeroGroup;
+
+    private bool a = false;
+    private bool isMenuActive;
+
     private void disableButton(bool disabler)
     {
         settingsButton.interactable = disabler;
@@ -44,7 +49,6 @@ public class MenuHandler : MonoBehaviour
         lineImage.color = color;
     }
 
-    // Public Methods
     public void settingsPopUp()
     {
         if (a == false)
@@ -67,5 +71,15 @@ public class MenuHandler : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OpenCloseHero()
+    {
+        if (MenuGroup != null)
+        {
+            isMenuActive = MenuGroup.activeSelf;
+            HeroGroup.SetActive(isMenuActive);
+            MenuGroup.SetActive(!isMenuActive);
+        }
     }
 }
