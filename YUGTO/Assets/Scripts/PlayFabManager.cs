@@ -5,13 +5,17 @@ using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayFabManager : MonoBehaviour
 {
-    [Header("UI")]
+    [Header("Default Input Fields")]
     public TextMeshProUGUI messageText;
     public TMP_InputField emailInput;
     public TMP_InputField passwordInput;
+
+    [Header("Forgot Password Input Fields")]
+    public TMP_InputField forgotEmailInput;
 
     public void RegisterButton()
     {
@@ -32,7 +36,7 @@ public class PlayFabManager : MonoBehaviour
 
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
-        messageText.text = "Registered and logged in!";
+        messageText.text = "Registered Successfully!";
     }
 
     public void LoginButton()
@@ -49,7 +53,7 @@ public class PlayFabManager : MonoBehaviour
     {
         var request = new SendAccountRecoveryEmailRequest
         {
-            Email = emailInput.text,
+            Email = forgotEmailInput.text,
             TitleId = "C33F5"
         };
         PlayFabClientAPI.SendAccountRecoveryEmail(request, OnPasswordReset, OnError);
@@ -59,6 +63,7 @@ public class PlayFabManager : MonoBehaviour
     {
         messageText.text = "Logged in!";
         Debug.Log("Successful login!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void OnError(PlayFabError error)

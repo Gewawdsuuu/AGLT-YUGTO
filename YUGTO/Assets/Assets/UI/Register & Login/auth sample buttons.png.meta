@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: fc5356487be8ecf458f532298b6bf5b3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: auth sample buttons_0
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1241
+        width: 635
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f26a685da2216240bd8bfdcafb4f3ad
+      internalID: -937121545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_11
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1049
+        width: 684
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625122ee25261e4448d1b92117b43f26
+      internalID: 1338058265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_38
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 791
+        width: 560
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54db2869b8ed1ac4581817f57e5947c8
+      internalID: -897207364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_39
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 399
+        width: 622
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b45c6bb9f38654f88ca1ef16f48c14
+      internalID: -791238632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_40
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 816
+        width: 160
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d087cc269d07e4abcc550c4295f559
+      internalID: 133541547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_44
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 684
+        width: 280
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f452b15b2ef6341a0ea0ecdae6eda9
+      internalID: -718069001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_51
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 662
+        width: 560
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482760013e59ca549967880617731666
+      internalID: -1957627717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_52
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 689
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cd5fe9d28b7244b86a870af9c7feb0
+      internalID: -1232157485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_53
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 689
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2aa86fb76466543a89de6c556e19c8
+      internalID: 94624696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_60
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 399
+        width: 308
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60e1af9db193e643965de3cb1a188e6
+      internalID: 575698267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_61
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 437
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e769f7c54da8a74ea1a1e489aba310e
+      internalID: -1950871993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_63
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 399
+        width: 309
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4696aaccd64e6a4f87c21e2e0ea5846
+      internalID: 2130011688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_65
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 263
+        width: 308
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9275f5b7709a9544a499e7384dba987
+      internalID: -730474952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auth sample buttons_66
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 184
+        width: 329
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17907691bed53094389cdd1072519ed0
+      internalID: 1304322078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      auth sample buttons_4: -1444443356
+      auth sample buttons_31: 1066373995
+      auth sample buttons_10: -894547628
+      auth sample buttons_32: -2062724457
+      auth sample buttons_44: -718069001
+      auth sample buttons_41: 1783606291
+      auth sample buttons_2: 619936463
+      auth sample buttons_62: 1765765430
+      auth sample buttons_59: -541109460
+      auth sample buttons_27: -774669137
+      auth sample buttons_29: 800030662
+      auth sample buttons_42: 156352530
+      auth sample buttons_8: -1746421247
+      auth sample buttons_1: -596399504
+      auth sample buttons_51: -1957627717
+      auth sample buttons_53: 94624696
+      auth sample buttons_7: 1248853845
+      auth sample buttons_9: 695663038
+      auth sample buttons_20: -1815496090
+      auth sample buttons_33: 1737803392
+      auth sample buttons_61: -1950871993
+      auth sample buttons_0: -937121545
+      auth sample buttons_67: 2041881325
+      auth sample buttons_26: -1628380676
+      auth sample buttons_43: 953549967
+      auth sample buttons_13: 1434381842
+      auth sample buttons_15: -1855107744
+      auth sample buttons_25: -422026018
+      auth sample buttons_45: 1392594482
+      auth sample buttons_40: 133541547
+      auth sample buttons_19: 740486891
+      auth sample buttons_5: 1907592449
+      auth sample buttons_60: 575698267
+      auth sample buttons_50: 79764204
+      auth sample buttons_28: -1260546847
+      auth sample buttons_47: -1042099464
+      auth sample buttons_24: -1266741861
+      auth sample buttons_17: 1146531296
+      auth sample buttons_54: -1139806797
+      auth sample buttons_18: -874299452
+      auth sample buttons_63: 2130011688
+      auth sample buttons_39: -791238632
+      auth sample buttons_49: 1107386624
+      auth sample buttons_16: -881936645
+      auth sample buttons_23: -896622431
+      auth sample buttons_36: 552859587
+      auth sample buttons_30: -1127395050
+      auth sample buttons_66: 1304322078
+      auth sample buttons_11: 1338058265
+      auth sample buttons_64: -1513732049
+      auth sample buttons_3: -625291456
+      auth sample buttons_58: -1514002446
+      auth sample buttons_38: -897207364
+      auth sample buttons_34: -590756425
+      auth sample buttons_14: -275272466
+      auth sample buttons_46: 2130762138
+      auth sample buttons_56: -825528602
+      auth sample buttons_22: -1094042631
+      auth sample buttons_57: 534788091
+      auth sample buttons_12: 858601772
+      auth sample buttons_55: 1474124497
+      auth sample buttons_6: 1704255028
+      auth sample buttons_21: 450508304
+      auth sample buttons_48: 849380078
+      auth sample buttons_52: -1232157485
+      auth sample buttons_37: -891359318
+      auth sample buttons_65: -730474952
+      auth sample buttons_35: 288555489
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
