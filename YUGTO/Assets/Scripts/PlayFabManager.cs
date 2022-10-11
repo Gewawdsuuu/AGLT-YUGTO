@@ -63,7 +63,7 @@ public class PlayFabManager : MonoBehaviour
     {
         messageText.text = "Logged in!";
         Debug.Log("Successful login!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("MainMenu");
     }
 
     void OnError(PlayFabError error)
