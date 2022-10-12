@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
@@ -81,5 +82,10 @@ public class MenuHandler : MonoBehaviour
             HeroGroup.SetActive(isMenuActive);
             MenuGroup.SetActive(!isMenuActive);
         }
+    }
+
+    public void PlayOnClick()
+    {
+        SceneManager.LoadScene("CutsceneDemoStart");
     }
 }
