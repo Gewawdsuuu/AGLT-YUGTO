@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 3873562092716452334}
   - component: {fileID: 976782822511226822}
   - component: {fileID: 5978137267396678632}
+  - component: {fileID: 4255301708680443688}
   m_Layer: 0
   m_Name: carabao
   m_TagString: Untagged
@@ -668,6 +669,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.756384, y: 5.81701}
   m_EdgeRadius: 0
+--- !u!114 &4255301708680443688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3873562092716452336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8845be744efae4ab667055b40a6d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
 --- !u!1 &3873562092723359788
 GameObject:
   m_ObjectHideFlags: 0

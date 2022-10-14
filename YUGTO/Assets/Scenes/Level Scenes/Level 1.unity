@@ -999,6 +999,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 976782822511226822, guid: 0af94dfb0f81ae9498052f3449ec0ac1, type: 3}
+      propertyPath: m_Constraints
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3873562091632444357, guid: 0af94dfb0f81ae9498052f3449ec0ac1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99999976
@@ -1066,6 +1070,10 @@ PrefabInstance:
     - target: {fileID: 3873562092716452336, guid: 0af94dfb0f81ae9498052f3449ec0ac1, type: 3}
       propertyPath: m_Name
       value: carabao
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873562092716452336, guid: 0af94dfb0f81ae9498052f3449ec0ac1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3873562092716452338, guid: 0af94dfb0f81ae9498052f3449ec0ac1, type: 3}
       propertyPath: m_RootOrder
@@ -2581,6 +2589,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackArea: {fileID: 8963119288834500775}
   timeToAttack: 0.25
+  playerDamage: 5
+  attacking: 0
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8963119288834500775
 GameObject:
   m_ObjectHideFlags: 0

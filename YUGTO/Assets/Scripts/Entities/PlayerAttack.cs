@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+
+    [Header("Attacking Parameters")]
     [SerializeField] private GameObject attackArea;
-
     [SerializeField] private float timeToAttack;
-    private bool attacking = false;
-    private float timer = 0f;
+    [SerializeField] private float playerDamage = 5f;
+    [SerializeField] private bool attacking = false;
+    public LayerMask enemyLayers;
 
+    private float timer = 0f;
     private Animator playerAnimator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +47,18 @@ public class PlayerAttack : MonoBehaviour
     {
         attacking = true;
         attackArea.SetActive(attacking);
-        playerAnimator.SetBool("isAttacking", attacking);
+        playerAnimator.SetTrigger("Attack");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (attacking)
+        {
+            if (collision.gameObject.tag == "Enemy")
+            {
+                GameObject.FindWithTag("Enemy").GetComponent<Enemy>().TakeDamage(playerDamage);
+            }
+        }
+
     }
 }
