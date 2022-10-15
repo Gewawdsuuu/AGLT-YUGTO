@@ -6,9 +6,17 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Animator playerAnimator;
-
-    [SerializeField] private float moveSpeed = 3f;
     private float moveHorizontal;
+    public bool isDead = false;
+
+
+    [Header("Player Parameters")]
+    [SerializeField] private float moveSpeed = 3f;
+    public float maxHealth = 100f;
+
+    private float currentHealth;
+    public HealthBar healthBar;
+
 
     private bool isFacingLeft = true;
 
@@ -16,6 +24,10 @@ public class PlayerController : MonoBehaviour
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
         playerAnimator = gameObject.GetComponent<Animator>();
+
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+        isDead = false;
     }
 
     void Update()
@@ -50,5 +62,35 @@ public class PlayerController : MonoBehaviour
         Vector2 currentScale = transform.localScale;
         currentScale.x *= -1;
         transform.localScale = currentScale;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+        Debug.Log("Current Player Health: " + currentHealth);
+
+        // Play Hurt Animation
+        playerAnimator.SetTrigger("Hit");
+
+        if (currentHealth <= 0 && isDead == false)
+        {
+            isDead = true;
+            Die();
+            currentHealth = 0;
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player is Dead!");
+        // Die Animation
+
+        if (isDead)
+        {
+            playerAnimator.SetBool("isDead", true);
+            // Disable Enemy
+            Destroy(gameObject, 2f);
+        }
     }
 }

@@ -50,6 +50,8 @@ public class PlayerAttack : MonoBehaviour
         playerAnimator.SetTrigger("Attack");
     }
 
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (attacking)

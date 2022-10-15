@@ -18,14 +18,6 @@ public class Enemy : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    private void Update()
-    {
-        // Always move healthbar with the enemy
-
-    }
-
-
-
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
