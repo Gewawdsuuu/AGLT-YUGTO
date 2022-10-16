@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayFabManager : MonoBehaviour
 {
+
     [Header("Default Input Fields")]
     public TextMeshProUGUI messageText;
     public TMP_InputField emailInput;
@@ -17,6 +18,13 @@ public class PlayFabManager : MonoBehaviour
     [Header("Forgot Password Input Fields")]
     public TMP_InputField forgotEmailInput;
 
+    private string myID;
+
+    #region PayerData
+
+    #endregion
+
+    #region Register
     public void RegisterButton()
     {
         if (passwordInput.text.Length < 6)
@@ -31,14 +39,24 @@ public class PlayFabManager : MonoBehaviour
             Password = passwordInput.text,
             RequireBothUsernameAndEmail = false
         };
-        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
+        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterError);
     }
 
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         messageText.text = "Registered Successfully!";
+
+        myID = result.PlayFabId;
     }
 
+    void OnRegisterError(PlayFabError error)
+    {
+        messageText.text = error.ErrorMessage;
+        Debug.Log(error.GenerateErrorReport());
+    }
+    #endregion
+
+    #region Login
     public void LoginButton()
     {
         var request = new LoginWithEmailAddressRequest
@@ -46,9 +64,27 @@ public class PlayFabManager : MonoBehaviour
             Email = emailInput.text,
             Password = passwordInput.text
         };
-        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
+        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnLoginError);
     }
 
+    void OnLoginSuccess(LoginResult login)
+    {
+        messageText.text = "Logged in!";
+        Debug.Log("Successful login!");
+
+        myID = login.PlayFabId;
+
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    void OnLoginError(PlayFabError error)
+    {
+        messageText.text = error.ErrorMessage;
+        Debug.Log(error.GenerateErrorReport());
+    }
+    #endregion
+
+    #region ResetPassword
     public void ResetPasswordButton()
     {
         var request = new SendAccountRecoveryEmailRequest
@@ -56,17 +92,10 @@ public class PlayFabManager : MonoBehaviour
             Email = forgotEmailInput.text,
             TitleId = "C33F5"
         };
-        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnPasswordReset, OnError);
+        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnPasswordReset, OnResetError);
     }
 
-    void OnLoginSuccess(LoginResult login)
-    {
-        messageText.text = "Logged in!";
-        Debug.Log("Successful login!");
-        SceneManager.LoadScene("MainMenu");
-    }
-
-    void OnError(PlayFabError error)
+    void OnResetError(PlayFabError error)
     {
         messageText.text = error.ErrorMessage;
         Debug.Log(error.GenerateErrorReport());
@@ -76,5 +105,6 @@ public class PlayFabManager : MonoBehaviour
     {
         messageText.text = "Password reset mail sent!";
     }
+    #endregion
 
 }

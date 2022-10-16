@@ -30,8 +30,16 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                // Attack Code
-                Attack();
+                if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().currentHealth > 0)
+                {
+                    // Attack Code
+                    Attack();
+                }
+                else
+                {
+                    attacking = false;
+                    attackArea.SetActive(attacking);
+                }
 
                 if (attacking)
                 {

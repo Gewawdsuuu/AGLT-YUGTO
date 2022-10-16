@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
+    [Header("Button On click settings")]
+    [SerializeField] private string playButtonScene;
+
     [Header("Canvas Settings")]
     [SerializeField] public Canvas settingsCanvas;
 
@@ -86,6 +89,6 @@ public class MenuHandler : MonoBehaviour
 
     public void PlayOnClick()
     {
-        SceneManager.LoadScene("CutsceneDemoStart");
+        SceneManager.LoadScene(playButtonScene);
     }
 }
