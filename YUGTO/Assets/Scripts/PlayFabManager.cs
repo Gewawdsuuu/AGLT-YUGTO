@@ -9,6 +9,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayFabManager : MonoBehaviour
 {
+    public static PlayFabManager instance;
+
+    public static int levelsUnlocked;
+    public static int goldValue;
 
     [Header("Default Input Fields")]
     public TextMeshProUGUI messageText;
@@ -20,8 +24,61 @@ public class PlayFabManager : MonoBehaviour
 
     private string myID;
 
-    #region PayerData
+    private void Awake()
+    {
+        instance = this;
+    }
 
+    #region PlayerLevelData
+    public void GetPlayerLevelData()
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest
+        {
+            Keys = null
+        }, OnGetUserLevelDataSuccess, OnError);
+    }
+
+    public void OnGetUserLevelDataSuccess(GetUserDataResult result)
+    {
+        // Checks if there is no save info
+        if (result.Data == null || !result.Data.ContainsKey("UnlockedLevels"))
+        {
+            // If There is no save data then write a new one with the default value
+            var writeRequest = new UpdateUserDataRequest
+            {
+                Data = new Dictionary<string, string>
+                {
+                    {"UnlockedLevels", "1" }
+                }
+            };
+            PlayFabClientAPI.UpdateUserData(writeRequest, OnSetLevelDataSuccess, OnError);
+        }
+        // If there is a save info
+        else
+        {
+            levelsUnlocked = int.Parse(result.Data["UnlockedLevels"].Value);
+            PlayFabLevelLoad.levelsUnlocked = levelsUnlocked;
+            Debug.Log(levelsUnlocked);
+        }
+    }
+
+    public void OnSetLevelDataSuccess(UpdateUserDataResult result)
+    {
+        Debug.Log("User data updated!");
+    }
+    #endregion
+
+    #region PlayerCurrencyData
+    public void GetVirtualCurrency()
+    {
+        PlayFabClientAPI.GetUserInventory(new GetUserInventoryRequest(), OnGetUserInventorySuccess, OnError);
+    }
+
+    void OnGetUserInventorySuccess(GetUserInventoryResult result)
+    {
+        goldValue = result.VirtualCurrency["GD"];
+        PlayFabShopManager.goldValue = goldValue;
+    }
     #endregion
 
     #region Register
@@ -47,6 +104,8 @@ public class PlayFabManager : MonoBehaviour
         messageText.text = "Registered Successfully!";
 
         myID = result.PlayFabId;
+
+        GetPlayerLevelData();
     }
 
     void OnRegisterError(PlayFabError error)
@@ -73,6 +132,11 @@ public class PlayFabManager : MonoBehaviour
         Debug.Log("Successful login!");
 
         myID = login.PlayFabId;
+
+
+        // Fetch Player Data
+        GetPlayerLevelData();
+        GetVirtualCurrency();
 
         SceneManager.LoadScene("MainMenu");
     }
@@ -106,5 +170,10 @@ public class PlayFabManager : MonoBehaviour
         messageText.text = "Password reset mail sent!";
     }
     #endregion
+
+    void OnError(PlayFabError error)
+    {
+        Debug.Log(error.GenerateErrorReport());
+    }
 
 }

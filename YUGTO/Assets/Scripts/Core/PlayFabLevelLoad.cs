@@ -4,19 +4,17 @@ using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayFabLevelLoad : MonoBehaviour
 {
-    public static PlayFabLevelLoad Instance { get; set; }
 
-    public int levelsUnlocked;
+    public static int levelsUnlocked;
 
     public Button[] levelButtons;
 
     private void Start()
     {
-        GetPlayerData();
-
         for (int i = 0; i < levelButtons.Length; i++)
         {
             levelButtons[i].interactable = false;
@@ -26,42 +24,19 @@ public class PlayFabLevelLoad : MonoBehaviour
         {
             levelButtons[i].interactable = true;
         }
+
+        Debug.Log("Unlocked Levels: " + levelsUnlocked);
     }
 
-    private void Awake()
+    public void OnLevelSelect()
     {
-        if (Instance == null)
+        for (int i = 0; i < levelButtons.Length; i++)
         {
-            Instance = this;
+            if (levelButtons[i] != null && levelButtons[i].interactable)
+            {
+                SceneManager.LoadScene("Level " + levelButtons[i].name);
+            }
         }
     }
 
-    #region PlayerData
-    public void GetPlayerData()
-    {
-        PlayFabClientAPI.GetUserData(new GetUserDataRequest()
-        {
-            Keys = null
-        }, GetUserDataSucess, OnError);
-    }
-
-    void GetUserDataSucess(GetUserDataResult result)
-    {
-        // Checks if there is no save info
-        if (result.Data == null || !result.Data.ContainsKey("UnlockedLevels"))
-        {
-            Debug.Log("No Save Info");
-        }
-        // If there is a save info
-        else
-        {
-
-        }
-    }
-    #endregion
-
-    void OnError(PlayFabError error)
-    {
-        Debug.Log(error.GenerateErrorReport());
-    }
 }

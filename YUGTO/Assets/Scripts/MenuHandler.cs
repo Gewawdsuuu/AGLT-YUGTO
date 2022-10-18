@@ -91,4 +91,9 @@ public class MenuHandler : MonoBehaviour
     {
         SceneManager.LoadScene(playButtonScene);
     }
+
+    public void ShopOnClick()
+    {
+        SceneManager.LoadScene("Shop");
+    }
 }
