@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private float moveHorizontal;
     public bool isDead = false;
 
+    private bool dieFunctionCalled = false;
 
     [Header("Player Parameters")]
     [SerializeField] private float moveSpeed = 3f;
@@ -34,7 +35,6 @@ public class PlayerController : MonoBehaviour
     {
         moveHorizontal = Input.GetAxisRaw("Horizontal");
 
-        // Animator parameter is set to run when Speed parameter is greater than 0.1f
         playerAnimator.SetFloat("Speed", Mathf.Abs(moveHorizontal));
 
         if (moveHorizontal > 0 && isFacingLeft)
@@ -49,9 +49,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (moveHorizontal > 0.1f || moveHorizontal < -0.1f)
+        if ((moveHorizontal > 0.1f || moveHorizontal < -0.1f) && !isDead)
         {
-            rb2D.AddForce(new Vector2(moveHorizontal *  moveSpeed, 0), ForceMode2D.Impulse);
+            rb2D.AddForce(new Vector2(moveHorizontal * moveSpeed, 0), ForceMode2D.Impulse);
         }
     }
 
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
         if (isDead)
         {
             playerAnimator.SetBool("isDead", true);
-            // Disable Enemy
+            // Disable Player
             Destroy(gameObject, 2f);
         }
     }

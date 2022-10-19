@@ -5,11 +5,12 @@ using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PlayFabLevelLoad : MonoBehaviour
 {
-
     public static int levelsUnlocked;
+    private string levelName;
 
     public Button[] levelButtons;
 
@@ -30,13 +31,20 @@ public class PlayFabLevelLoad : MonoBehaviour
 
     public void OnLevelSelect()
     {
-        for (int i = 0; i < levelButtons.Length; i++)
-        {
-            if (levelButtons[i] != null && levelButtons[i].interactable)
-            {
-                SceneManager.LoadScene("Level " + levelButtons[i].name);
-            }
-        }
+        string selectedButton = EventSystem.current.currentSelectedGameObject.name;
+        SceneManager.LoadScene("HeroSelection");
+        HeroSelection.levelName = selectedButton;
+    }
+
+
+    public void OnSetCurrentLevelDataSuccess(UpdateUserDataResult result)
+    {
+        Debug.Log("User data updated!");
+    }
+
+    void OnError(PlayFabError error)
+    {
+        Debug.Log(error.GenerateErrorReport());
     }
 
 }

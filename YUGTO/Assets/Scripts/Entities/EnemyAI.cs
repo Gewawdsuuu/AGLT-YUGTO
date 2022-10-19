@@ -15,52 +15,43 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Enemy Attack Attributes")]
     [SerializeField] private GameObject attackArea;
-    [SerializeField] private float timeToAttack;
+    [SerializeField] private float timeBetweenAttacks;
     [SerializeField] private float enemyDamage = 5f;
     private float timer = 0f;
     public bool attacking = false;
 
+    private void Start()
+    {
+
+    }
+
     private void Update()
     {
-        if (target != null)
+        if  (target != null)
         {
+            // Continue to move towards the target if not close enough
             if (Vector2.Distance(transform.position, target.position) > minimumDistance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             }
             else
             {
-                if (GameObject.FindWithTag("Player").GetComponent<PlayerController>().currentHealth > 0)
-                {
-                    // Attack Code
-                    Attack();
-                }
-                else
-                {
-                    attacking = false;
-                    attackArea.SetActive(attacking);
-                }
-
-                if (attacking)
-                {
-                    timer += Time.deltaTime;
-
-                    if (timer >= timeToAttack)
-                    {
-                        timer = 0f;
-                        attacking = false;
-                        attackArea.SetActive(attacking);
-                    }
-                }
+                // Attack Code
+                Attack();
             }
         }
         else
         {
-            GetComponent<AIDestinationSetter>().enabled = false;
+            GameObject temp = GameObject.FindGameObjectWithTag("Player");
+            if (temp  != null)
+            {
+                target = temp.GetComponent<Transform>();
+            }
         }
     }
 
-    private void Attack()
+
+    public void Attack()
     {
         attacking = true;
         attackArea.SetActive(attacking);

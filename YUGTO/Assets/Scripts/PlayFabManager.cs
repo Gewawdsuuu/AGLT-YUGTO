@@ -58,7 +58,7 @@ public class PlayFabManager : MonoBehaviour
         {
             levelsUnlocked = int.Parse(result.Data["UnlockedLevels"].Value);
             PlayFabLevelLoad.levelsUnlocked = levelsUnlocked;
-            Debug.Log(levelsUnlocked);
+            Debug.Log("PlayfabLevelLoad Unlocked: " + PlayFabLevelLoad.levelsUnlocked);
         }
     }
 

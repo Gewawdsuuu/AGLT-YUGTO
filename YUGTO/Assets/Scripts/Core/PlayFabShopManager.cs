@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using PlayFab;
 using PlayFab.ClientModels;
+using UnityEngine.SceneManagement;
 
 public class PlayFabShopManager : MonoBehaviour
 {
@@ -55,5 +56,10 @@ public class PlayFabShopManager : MonoBehaviour
     void OnError(PlayFabError error)
     {
         Debug.Log(error.GenerateErrorReport());
+    }
+
+    public void OnBackClick()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
