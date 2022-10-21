@@ -5,6 +5,8 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
+    public Enemies enemyType;
+
     [Header("Pathfinding Attributes")]
     public Transform target;
     public float speed;
@@ -16,13 +18,17 @@ public class EnemyAI : MonoBehaviour
     [Header("Enemy Attack Attributes")]
     [SerializeField] private GameObject attackArea;
     [SerializeField] private float timeBetweenAttacks;
-    [SerializeField] private float enemyDamage = 5f;
-    private float timer = 0f;
+    [SerializeField] private float enemyDamage;
     public bool attacking = false;
 
     private void Start()
     {
+        // Set Enemy parameters based on enemy type
+        enemyDamage = enemyType.enemyDamage;
+        speed = enemyType.enemyMovespeed;
 
+        GameObject temp = GameObject.FindGameObjectWithTag("Player");
+        target = temp.GetComponent<Transform>();
     }
 
     private void Update()
@@ -49,7 +55,6 @@ public class EnemyAI : MonoBehaviour
             }
         }
     }
-
 
     public void Attack()
     {

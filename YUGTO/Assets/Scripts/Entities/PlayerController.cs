@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Heroes hero;
+
     private Rigidbody2D rb2D;
     private Animator playerAnimator;
     private float moveHorizontal;
     public bool isDead = false;
 
-    private bool dieFunctionCalled = false;
-
     [Header("Player Parameters")]
-    [SerializeField] private float moveSpeed = 3f;
-    public float maxHealth = 100f;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float maxHealth;
 
     public float currentHealth;
     public HealthBar healthBar;
@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        // Set Player parameters depending on hero class
+        moveSpeed = hero.moveSpeed;
+        maxHealth = hero.maxHealth;
+
         rb2D = gameObject.GetComponent<Rigidbody2D>();
         playerAnimator = gameObject.GetComponent<Animator>();
 

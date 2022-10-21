@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33f23b918615d1498e4c5586838a7d6, type: 3}
+  m_Name: JuanLuna
+  m_EditorClassIdentifier: 
+  heroName: Juan Luna
+  heroClass: 3
+  maxHealth: 20
+  maxMana: 20
+  damage: 5
+  moveSpeed: 2
+  ability1Name: Thunderbolt
+  ability1Description: "Sends a wave of thunder\r upon the enemies dealing\r damage."
+  ability1Damage: 100
+  ability1Manacost: 5
+  ability2Name: Ink Trap
+  ability2Description: "Traps all enemies in an\r area with ink while\r dealing damage
+    per\r second."
+  ability2Damage: 20
+  ability2Manacost: 5

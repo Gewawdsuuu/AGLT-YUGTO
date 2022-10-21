@@ -818,9 +818,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20f8683fe9012345a8446af87d8fae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hero: {fileID: 11400000, guid: 9b353607ab204ed4f8bc3394438cfbaf, type: 2}
   isDead: 0
-  moveSpeed: 3
-  maxHealth: 20
+  moveSpeed: 0
+  maxHealth: 0
   currentHealth: 0
   healthBar: {fileID: 3511429776484932550}
 --- !u!114 &7737305652108874517
@@ -835,9 +836,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25e255affc8e214eb81db59b6ec0f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hero: {fileID: 11400000, guid: 9b353607ab204ed4f8bc3394438cfbaf, type: 2}
   attackArea: {fileID: 5537315681887624319}
   timeToAttack: 1
-  playerDamage: 5
+  playerDamage: 0
   attacking: 0
   enemyLayers:
     serializedVersion: 2

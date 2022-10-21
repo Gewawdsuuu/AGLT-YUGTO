@@ -10,10 +10,21 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
-    // Update is called once per frame
-    void Update()
+    Quaternion rotation;
+
+    private void Awake()
     {
-        
+        rotation = transform.rotation;
+    }
+
+    private void Update()
+    {
+        transform.rotation = rotation;
+    }
+
+    private void LateUpdate()
+    {
+        transform.rotation = rotation;
     }
 
     public void SetMaxHealth(float health)
@@ -21,12 +32,12 @@ public class HealthBar : MonoBehaviour
         healthbarSlider.maxValue = health;
         healthbarSlider.value = health;
 
-        fill.color = gradient.Evaluate(1f);
+        //fill.color = gradient.Evaluate(1f);
     }
 
     public void SetHealth(float health)
     {
         healthbarSlider.value = health;
-        fill.color = gradient.Evaluate(healthbarSlider.normalizedValue);
+        //fill.color = gradient.Evaluate(healthbarSlider.normalizedValue);
     }
 }

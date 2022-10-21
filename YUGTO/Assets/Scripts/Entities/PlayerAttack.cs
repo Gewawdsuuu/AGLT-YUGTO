@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public Heroes hero;
 
     [Header("Attacking Parameters")]
     [SerializeField] private GameObject attackArea;
     [SerializeField] private float timeToAttack;
-    [SerializeField] private float playerDamage = 5f;
+    [SerializeField] private float playerDamage;
     [SerializeField] private bool attacking = false;
     public LayerMask enemyLayers;
 
@@ -19,6 +20,9 @@ public class PlayerAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set Player parameters depending on hero class
+        playerDamage = hero.damage;
+
         playerAnimator = gameObject.GetComponent<Animator>();
     }
 

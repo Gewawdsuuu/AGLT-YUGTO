@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bca3c38a47178048ae7d0d3d5d75c7d, type: 3}
+  m_Name: EmilioAguinaldo
+  m_EditorClassIdentifier: 
+  heroName: Emilio Aguinaldo
+  heroClass: 1
+  maxHealth: 20
+  maxMana: 20
+  damage: 5
+  moveSpeed: 2
+  ability1Name: Star Shower
+  ability1Description: "Sends a shower of arrows\r that damages all enemies\r in
+    the area."
+  ability1Damage: 75
+  ability1Manacost: 20
+  ability2Name: Double Shot
+  ability2Description: Fires 2 bullets that damages enemies in a line.
+  ability2Damage: 25
+  ability2Manacost: 20
