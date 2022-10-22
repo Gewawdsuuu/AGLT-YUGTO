@@ -12,18 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33f23b918615d1498e4c5586838a7d6, type: 3}
   m_Name: JuanLuna
   m_EditorClassIdentifier: 
-  heroName: Juan Luna
+  heroName: JuanLuna
   heroClass: 3
-  maxHealth: 20
-  maxMana: 20
-  damage: 5
+  currentHealth: 0
+  maxHealth: 300
+  healthRegen: 0.15
+  currentMana: 0
+  maxMana: 150
+  manaRegen: 0.3
+  armor: 10
+  damage: 20
   moveSpeed: 2
-  ability1Name: Thunderbolt
+  currentLevel: 1
+  currentExperience: 0
+  maxExperience: 100
+  strength: 1
+  agility: 1
+  intelligence: 1
+  skillPoints: 0
+  ability1Name: Thunder bolt
   ability1Description: "Sends a wave of thunder\r upon the enemies dealing\r damage."
   ability1Damage: 100
-  ability1Manacost: 5
+  ability1Manacost: 20
   ability2Name: Ink Trap
   ability2Description: "Traps all enemies in an\r area with ink while\r dealing damage
     per\r second."
   ability2Damage: 20
-  ability2Manacost: 5
+  ability2Manacost: 20

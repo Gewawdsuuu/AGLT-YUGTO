@@ -21,6 +21,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float enemyDamage;
     public bool attacking = false;
 
+    float lastShot;
+
     private void Start()
     {
         // Set Enemy parameters based on enemy type
@@ -54,6 +56,7 @@ public class EnemyAI : MonoBehaviour
                 target = temp.GetComponent<Transform>();
             }
         }
+
     }
 
     public void Attack()
@@ -62,6 +65,7 @@ public class EnemyAI : MonoBehaviour
         attackArea.SetActive(attacking);
         animator.SetTrigger("Attack");
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

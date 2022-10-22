@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     public float currentHealth;
     public HealthBar healthBar;
 
-
     private bool isFacingLeft = true;
 
     void Start()

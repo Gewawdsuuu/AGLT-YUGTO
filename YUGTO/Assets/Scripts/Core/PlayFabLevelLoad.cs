@@ -14,8 +14,15 @@ public class PlayFabLevelLoad : MonoBehaviour
 
     public Button[] levelButtons;
 
+    private void Awake()
+    {
+        PlayFabManager.instance.GetPlayerLevelData();
+    }
+
     private void Start()
     {
+        Time.timeScale = 1.0f;
+
         for (int i = 0; i < levelButtons.Length; i++)
         {
             levelButtons[i].interactable = false;
@@ -25,8 +32,6 @@ public class PlayFabLevelLoad : MonoBehaviour
         {
             levelButtons[i].interactable = true;
         }
-
-        Debug.Log("Unlocked Levels: " + levelsUnlocked);
     }
 
     public void OnLevelSelect()
@@ -34,6 +39,11 @@ public class PlayFabLevelLoad : MonoBehaviour
         string selectedButton = EventSystem.current.currentSelectedGameObject.name;
         SceneManager.LoadScene("HeroSelection");
         HeroSelection.levelName = selectedButton;
+    }
+
+    public void OnDemoSelect()
+    {
+        SceneManager.LoadScene("CutsceneDemoStart");
     }
 
 

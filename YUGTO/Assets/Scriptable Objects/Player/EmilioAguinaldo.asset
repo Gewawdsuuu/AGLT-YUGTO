@@ -12,12 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bca3c38a47178048ae7d0d3d5d75c7d, type: 3}
   m_Name: EmilioAguinaldo
   m_EditorClassIdentifier: 
-  heroName: Emilio Aguinaldo
+  heroName: Emilio
   heroClass: 1
-  maxHealth: 20
-  maxMana: 20
-  damage: 5
+  currentHealth: 0
+  maxHealth: 300
+  healthRegen: 0.15
+  currentMana: 0
+  maxMana: 150
+  manaRegen: 0.3
+  armor: 10
+  damage: 20
   moveSpeed: 2
+  currentLevel: 1
+  currentExperience: 0
+  maxExperience: 100
+  strength: 1
+  agility: 1
+  intelligence: 1
+  skillPoints: 0
   ability1Name: Star Shower
   ability1Description: "Sends a shower of arrows\r that damages all enemies\r in
     the area."

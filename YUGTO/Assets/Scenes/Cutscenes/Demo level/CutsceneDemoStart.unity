@@ -4210,7 +4210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306db6eb05c66d84b80aa11a75665cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: CutsceneLevel1Opening
+  SceneName: Level 0
 --- !u!1 &1735782870
 GameObject:
   m_ObjectHideFlags: 0

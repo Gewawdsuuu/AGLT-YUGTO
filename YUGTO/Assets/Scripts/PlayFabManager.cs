@@ -6,10 +6,14 @@ using PlayFab.ClientModels;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Newtonsoft.Json;
 
 public class PlayFabManager : MonoBehaviour
 {
     public static PlayFabManager instance;
+
+    [Header("PlayFabCharacterData")]
+    public PlayFabCharacterData characterData;
 
     public static int levelsUnlocked;
     public static int goldValue;
@@ -60,6 +64,29 @@ public class PlayFabManager : MonoBehaviour
             PlayFabLevelLoad.levelsUnlocked = levelsUnlocked;
             Debug.Log("PlayfabLevelLoad Unlocked: " + PlayFabLevelLoad.levelsUnlocked);
         }
+    }
+
+    // Used for updating level data when player finishes a level
+    public void GetLevelData()
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest
+        {
+            Keys = null
+        }, OnGetUpdateUserLevelSuccess, OnError);
+    }
+
+    public void OnGetUpdateUserLevelSuccess(GetUserDataResult result)
+    {
+        levelsUnlocked += 1;
+
+        var writeRequest = new UpdateUserDataRequest
+        {
+            Data = new Dictionary<string, string>
+            {
+                {"UnlockedLevels", levelsUnlocked.ToString() }
+            }
+        };
+        PlayFabClientAPI.UpdateUserData(writeRequest, OnDataSend, OnError);
     }
 
     public void OnSetLevelDataSuccess(UpdateUserDataResult result)
@@ -174,6 +201,11 @@ public class PlayFabManager : MonoBehaviour
     void OnError(PlayFabError error)
     {
         Debug.Log(error.GenerateErrorReport());
+    }
+
+    void OnDataSend(UpdateUserDataResult result)
+    {
+        Debug.Log("Successful user data send!");
     }
 
 }

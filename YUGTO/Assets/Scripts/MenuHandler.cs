@@ -35,6 +35,11 @@ public class MenuHandler : MonoBehaviour
     private bool a = false;
     private bool isMenuActive;
 
+    private void Start()
+    {
+        PlayFabManager.instance.GetPlayerLevelData();
+    }
+
     private void disableButton(bool disabler)
     {
         settingsButton.interactable = disabler;

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using PlayFab;
+using PlayFab.ClientModels;
 
 public class Enemy : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class Enemy : MonoBehaviour
     public HealthBar healthBar;
 
     private string goldText;
-    private float RadNum = 0f;
+    private int RandomGold = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -44,12 +46,13 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         Debug.Log("Enemy is dead!");
-        RadNum = Random.Range(50, 100);
-        goldText =  "+" + RadNum.ToString() + " Gold!";
+        RandomGold = Random.Range(50, 100);
+        goldText =  "+" + RandomGold.ToString() + " Gold!";
         // Die Animation
 
         // Disable Enemy
         ShowDroppedGold(goldText);
+        GiveGold();
         Destroy(this.gameObject);
     }
 
@@ -60,5 +63,26 @@ public class Enemy : MonoBehaviour
             GameObject prefab = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
             prefab.GetComponentInChildren<TextMesh>().text = text;
         }
+    }
+
+    // Method to give gold to player
+    public void GiveGold()
+    {
+        var request = new AddUserVirtualCurrencyRequest
+        {
+            VirtualCurrency = "GD",
+            Amount = RandomGold
+        };
+        PlayFabClientAPI.AddUserVirtualCurrency(request, OnGiveGoldSuccess, OnError);
+    }
+
+    void OnGiveGoldSuccess(ModifyUserVirtualCurrencyResult result)
+    {
+        Debug.Log(result.VirtualCurrency);
+    }
+
+    void OnError(PlayFabError error)
+    {
+        Debug.Log(error.GenerateErrorReport());
     }
 }

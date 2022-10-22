@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0786e0afa5dc954c88fd699f59d1e4e, type: 3}
+  m_Name: GabrielaSilang
+  m_EditorClassIdentifier: 
+  heroName: Gabriela Silang
+  heroClass: 0
+  currentHealth: 0
+  maxHealth: 300
+  healthRegen: 0.15
+  currentMana: 0
+  maxMana: 150
+  manaRegen: 0.3
+  armor: 10
+  damage: 20
+  moveSpeed: 2
+  currentLevel: 1
+  currentExperience: 0
+  maxExperience: 100
+  strength: 1
+  agility: 1
+  intelligence: 1
+  skillPoints: 0
+  ability1Name: Taunt
+  ability1Description: Forces enemies to attack the caster for a few seconds.
+  ability1Damage: 2
+  ability1Manacost: 20
+  ability2Name: Spear Throw
+  ability2Description: Throws a huge spear that damages enemies in a line
+  ability2Damage: 50
+  ability2Manacost: 20
