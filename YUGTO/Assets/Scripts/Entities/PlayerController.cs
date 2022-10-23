@@ -14,8 +14,11 @@ public class PlayerController : MonoBehaviour
     [Header("Player Parameters")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float maxHealth;
-
     public float currentHealth;
+
+    [SerializeField] private float maxMana;
+    public float currentMana;
+
     public HealthBar healthBar;
 
     private bool isFacingLeft = true;
@@ -26,10 +29,14 @@ public class PlayerController : MonoBehaviour
         moveSpeed = hero.moveSpeed;
         maxHealth = hero.maxHealth;
 
+        maxMana = hero.maxMana;
+
         rb2D = gameObject.GetComponent<Rigidbody2D>();
         playerAnimator = gameObject.GetComponent<Animator>();
 
         currentHealth = maxHealth;
+        currentMana = maxMana;
+
         healthBar.SetMaxHealth(maxHealth);
         isDead = false;
     }

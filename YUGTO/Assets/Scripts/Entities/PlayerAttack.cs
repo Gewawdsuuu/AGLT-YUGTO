@@ -62,7 +62,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if (collision.gameObject.tag == "Enemy")
             {
-                GameObject.FindWithTag("Enemy").GetComponent<Enemy>().TakeDamage(playerDamage);
+                collision.gameObject.GetComponent<Enemy>().TakeDamage(playerDamage);
             }
         }
 

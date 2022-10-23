@@ -1,0 +1,891 @@
+fileFormatVersion: 2
+guid: c09f3693d0e6a8d4fbd373f3ae1b48e4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 278
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8824bef88e857468b40cd42f547c04
+      internalID: -15757370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 277
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06568a1be1e128c4ba206e00dd63688d
+      internalID: 760831924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 279
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7274ec5e230b2145b14c8e8292ce6a8
+      internalID: 243586612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 282
+        width: 7
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0380207f765be04fbc6e4eb5dfa5d07
+      internalID: -1430343849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 278
+        width: 7
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089104a52f893db4087fd270e43ab7c5
+      internalID: 1126015372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 276
+        width: 7
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03c185d3e66fb04582bddbff32b81a0
+      internalID: -382365829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 281
+        width: 40
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7582074d96e99419207eb350cda9ca
+      internalID: 1999262663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 277
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e73ed0f00d79ef41b07e6d78efa8a41
+      internalID: 1370537008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 192
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a998d856dbd3e4d9d7d25187477d5f
+      internalID: 32914103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 195
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6068311663ab4944aa5dca37831f8de
+      internalID: -805278249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 196
+        width: 43
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745a4a1432c387144950a41caef08de3
+      internalID: 92336694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 196
+        width: 42
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e743e33507108a4cb8f3505a75c2e8c
+      internalID: 113196429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 196
+        width: 42
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c06406051038e4ca7281eaca81444b
+      internalID: 516243333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 196
+        width: 42
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e0fcef47ae118459a4c3876abc23d1
+      internalID: 2026149254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 197
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2580e1991297e4eb4173045b7ba0a4
+      internalID: 1302686200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 196
+        width: 42
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5ae4f5423f7384189f5db3f4edf850
+      internalID: 1543934746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 110
+        width: 41
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b287e438d0639545baf2e13be21b487
+      internalID: 1616695886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 104
+        width: 40
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b29a1bc67fef247ae3cca5d401ee6b
+      internalID: -595748013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 93
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb06739752385741ad400e109ceadd7
+      internalID: 981318475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 93
+        width: 8
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdb00a46c17a954ca6dcf76cd324dfe
+      internalID: 670021911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 89
+        width: 8
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcedf01efc45d8246b168b872da3591b
+      internalID: -1836880336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 85
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472b0021737b71c46b143fbfd34c3a58
+      internalID: 467956784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 89
+        width: 6
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c128c7b93071cd499f90379722c33e3
+      internalID: -786438806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 93
+        width: 6
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d976f50edcb3642b85359d0f193c3a
+      internalID: -1734722158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 22
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467be36fab07d474bbc4b72e7de40aed
+      internalID: 674835166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 25
+        width: 42
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4243f5bd5d4050a40bd4aa56235d7c4e
+      internalID: 2016507563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 26
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e013735fdcdbe049968f89ee4cc7db0
+      internalID: -1218101725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 26
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355de50101e7c0d4aa11259fd027b5e9
+      internalID: -1722739824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 26
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa2bc3a8e915c04f90571a2ac5291c5
+      internalID: -641191747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 26
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6608a182f50e7be4289d5b157a1a64db
+      internalID: -1131502188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 26
+        width: 43
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4398f12a8af3cbf4489ab93a7cb7a1a7
+      internalID: 1326732799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sample_spear-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 26
+        width: 43
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9f1984f4aa2e7478d534e0d92e6f06
+      internalID: 308463982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ce2ac0f0928d80e4b9d129071aed57ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sample_spear-removebg-preview_7: 1370537008
+      sample_spear-removebg-preview_29: 1689733754
+      sample_spear-removebg-preview_15: -1424529202
+      sample_spear-removebg-preview_26: 1543934746
+      sample_spear-removebg-preview_4: 1126015372
+      sample_spear-removebg-preview_19: -379239186
+      sample_spear-removebg-preview_34: 981318475
+      sample_spear-removebg-preview_32: 1616695886
+      sample_spear-removebg-preview_10: -1333762136
+      sample_spear-removebg-preview_47: 1326732799
+      sample_spear-removebg-preview_40: 674835166
+      sample_spear-removebg-preview_12: 2001736322
+      sample_spear-removebg-preview_18: -276140661
+      sample_spear-removebg-preview_39: -1734722158
+      sample_spear-removebg-preview_36: -1836880336
+      sample_spear-removebg-preview_43: -1218101725
+      sample_spear-removebg-preview_9: -1875258092
+      sample_spear-removebg-preview_33: -595748013
+      sample_spear-removebg-preview_0: -15757370
+      sample_spear-removebg-preview_35: 670021911
+      sample_spear-removebg-preview_31: -435404181
+      sample_spear-removebg-preview_6: 1999262663
+      sample_spear-removebg-preview_2: 243586612
+      sample_spear-removebg-preview_16: 32914103
+      sample_spear-removebg-preview_17: -805278249
+      sample_spear-removebg-preview_3: -1430343849
+      sample_spear-removebg-preview_14: -179141143
+      sample_spear-removebg-preview_45: -641191747
+      sample_spear-removebg-preview_46: -1131502188
+      sample_spear-removebg-preview_41: -1714617940
+      sample_spear-removebg-preview_11: 573800624
+      sample_spear-removebg-preview_42: 2016507563
+      sample_spear-removebg-preview_44: -1722739824
+      sample_spear-removebg-preview_28: -453146293
+      sample_spear-removebg-preview_38: -786438806
+      sample_spear-removebg-preview_37: 467956784
+      sample_spear-removebg-preview_27: -826704277
+      sample_spear-removebg-preview_30: -537751853
+      sample_spear-removebg-preview_23: 516243333
+      sample_spear-removebg-preview_48: 308463982
+      sample_spear-removebg-preview_13: 1534550830
+      sample_spear-removebg-preview_21: -568487829
+      sample_spear-removebg-preview_25: 1302686200
+      sample_spear-removebg-preview_20: 92336694
+      sample_spear-removebg-preview_24: 2026149254
+      sample_spear-removebg-preview_8: 2015976369
+      sample_spear-removebg-preview_1: 760831924
+      sample_spear-removebg-preview_5: -382365829
+      sample_spear-removebg-preview_22: 113196429
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

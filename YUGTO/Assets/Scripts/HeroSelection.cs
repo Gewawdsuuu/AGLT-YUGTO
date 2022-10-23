@@ -17,6 +17,7 @@ public class HeroSelection : MonoBehaviour
 
     private void Start()
     {
+        selectedHeroes = 0;
         Debug.Log("(HeroSelection Scene) Current Selected Level: " + levelName);
 
     }
@@ -47,6 +48,13 @@ public class HeroSelection : MonoBehaviour
 
     public void OnStartSelect()
     {
-        SceneManager.LoadScene("Level " + levelName);
+        if (levelName == "1")
+            SceneManager.LoadScene("CutsceneLevel1Opening");
+        else if (levelName == "4")
+            SceneManager.LoadScene("CutsceneLevel4Opening");
+        else if (levelName == "8")
+            SceneManager.LoadScene("CutsceneLevel8Opening");
+        else
+            SceneManager.LoadScene("Level " + levelName);
     }
 }

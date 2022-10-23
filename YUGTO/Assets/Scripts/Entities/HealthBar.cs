@@ -10,23 +10,6 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
-    Quaternion rotation;
-
-    private void Awake()
-    {
-        rotation = transform.rotation;
-    }
-
-    private void Update()
-    {
-        transform.rotation = rotation;
-    }
-
-    private void LateUpdate()
-    {
-        transform.rotation = rotation;
-    }
-
     public void SetMaxHealth(float health)
     {
         healthbarSlider.maxValue = health;

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895747e115edcb140b340c0603b7b283, type: 3}
+  m_Name: Double Shot
+  m_EditorClassIdentifier: 
+  abilityName: Double Shot
+  abilityLevel: 1
+  abilityDamage: 30
+  abilityCooldown: 5
+  abilityManacost: 20
+  abilitySprite: {fileID: 600706568, guid: abcff0f683fca444f8f045c7e53e4874, type: 3}
+  abilityPrefab: {fileID: 5396291084699635242, guid: 9e767b67d1885064ea5d25a6d0773823, type: 3}
+  projectileSpeed: 100
+  skillButtonPrefab: {fileID: 0}

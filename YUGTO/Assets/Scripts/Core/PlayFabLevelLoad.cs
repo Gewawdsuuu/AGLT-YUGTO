@@ -39,6 +39,7 @@ public class PlayFabLevelLoad : MonoBehaviour
         string selectedButton = EventSystem.current.currentSelectedGameObject.name;
         SceneManager.LoadScene("HeroSelection");
         HeroSelection.levelName = selectedButton;
+        DemoLevelHandler.currentLevel = int.Parse(selectedButton);
     }
 
     public void OnDemoSelect()
@@ -55,6 +56,11 @@ public class PlayFabLevelLoad : MonoBehaviour
     void OnError(PlayFabError error)
     {
         Debug.Log(error.GenerateErrorReport());
+    }
+
+    public void OnBackSelect()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

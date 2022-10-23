@@ -5,15 +5,16 @@ using UnityEngine.SceneManagement;
 
 namespace DialogueSystem
 {
-
     public class DialogueHolder : MonoBehaviour
     {
         [SerializeField] private string SceneName;
+        private string currentScene;
 
         private void Awake()
         {
             StartCoroutine(dialogueSequence());
         }
+
 
         private IEnumerator dialogueSequence()
         {
@@ -25,7 +26,15 @@ namespace DialogueSystem
             }
 
             // Input code here on what to do after cutscene
-            SceneManager.LoadScene(SceneName);
+            if (SceneManager.GetActiveScene().name == "CutsceneDemoStart")
+            {
+                PlayFabManager.instance.GetPlayerLevelData();
+                StartCoroutine(LevelWaiter());
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneName);
+            }
         }
 
         private void Deactivate()
@@ -34,6 +43,12 @@ namespace DialogueSystem
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
+        }
+
+        IEnumerator LevelWaiter()
+        {
+            yield return new WaitForSecondsRealtime(3);
+            SceneManager.LoadScene(SceneName);
         }
     }
 

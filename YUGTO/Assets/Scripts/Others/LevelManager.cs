@@ -13,7 +13,16 @@ public class LevelManager : MonoBehaviour
     public GameObject levelCompletePanel;
     public GameObject levelFailedPanel;
 
+    private static int levelsUnlocked;
+    private static int currentLevel;
+
     private bool levelDone = false;
+
+    private void Start()
+    {
+        levelsUnlocked = PlayFabManager.levelsUnlocked;
+        currentLevel = int.Parse(HeroSelection.levelName);
+    }
 
     // Update is called once per frame
     void Update()
@@ -32,7 +41,10 @@ public class LevelManager : MonoBehaviour
 
     private void LevelComplete()
     {
-        PlayFabManager.instance.GetLevelData();
+        if (levelsUnlocked <= (currentLevel + 1))
+        {
+            PlayFabManager.instance.GetLevelData();
+        }
         blurImage.SetActive(true);
         levelCompletePanel.SetActive(true);
         Time.timeScale = 0f;
@@ -50,10 +62,16 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void OnRetryorNextSelect()
+    public void OnNextSelect()
     {
         PlayFabManager.instance.GetPlayerLevelData();
         StartCoroutine(LevelWaiter());
+    }
+
+    public void OnRetrySelect()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Level 1");
     }
 
     IEnumerator LevelWaiter()

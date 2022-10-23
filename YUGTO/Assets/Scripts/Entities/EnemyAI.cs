@@ -17,7 +17,8 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Enemy Attack Attributes")]
     [SerializeField] private GameObject attackArea;
-    [SerializeField] private float timeBetweenAttacks;
+    [SerializeField] private float timeToAttack = 0.25f;
+    [SerializeField] private float timer = 0f;
     [SerializeField] private float enemyDamage;
     public bool attacking = false;
 
@@ -57,24 +58,38 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
+        if (attacking)
+        {
+            timer += Time.deltaTime;
+
+            if  (timer >= timeToAttack)
+            {
+                timer = 0;
+                attacking = false;
+                attackArea.SetActive(attacking);
+            }
+        }
     }
 
     public void Attack()
     {
-        attacking = true;
-        attackArea.SetActive(attacking);
-        animator.SetTrigger("Attack");
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (attacking)
+        if (attacking == false)
         {
-            if (collision.gameObject.tag == "Player")
-            {
-                GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeDamage(enemyDamage);
-            }
+            attacking = true;
+            attackArea.SetActive(attacking);
+            animator.SetTrigger("Attack");
         }
     }
+
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (attacking)
+    //    {
+    //        if (collision.gameObject.tag == "Player")
+    //        {
+    //            GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeDamage(enemyDamage);
+    //        }
+    //    }
+    //}
 }
