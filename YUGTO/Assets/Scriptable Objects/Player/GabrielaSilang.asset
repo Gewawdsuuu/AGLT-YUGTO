@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0786e0afa5dc954c88fd699f59d1e4e, type: 3}
   m_Name: GabrielaSilang
   m_EditorClassIdentifier: 
+  heroId: hero_Silang
   heroName: Gabriela Silang
+  isHeroUnlocked: 1
   heroClass: 0
   currentHealth: 0
   maxHealth: 300
@@ -30,11 +32,5 @@ MonoBehaviour:
   agility: 1
   intelligence: 1
   skillPoints: 0
-  ability1Name: Taunt
-  ability1Description: Forces enemies to attack the caster for a few seconds.
-  ability1Damage: 2
-  ability1Manacost: 20
-  ability2Name: Spear Throw
-  ability2Description: Throws a huge spear that damages enemies in a line
-  ability2Damage: 50
-  ability2Manacost: 20
+  ability1: Taunt
+  ability2: Spear Throw

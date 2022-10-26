@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HeroToggleHandler : MonoBehaviour
 {
     private Toggle heroToggle;
+    public Heroes hero;
 
     private void Start()
     {

@@ -160,7 +160,7 @@ TextureImporter:
         width: 140
         height: 141
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_1
+      name: Gabriel Silang
       rect:
         serializedVersion: 2
         x: 505
@@ -181,7 +181,7 @@ TextureImporter:
         width: 294
         height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_2
+      name: Andres Bonifacio
       rect:
         serializedVersion: 2
         x: 842
@@ -202,7 +202,7 @@ TextureImporter:
         width: 293
         height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_3
+      name: Antonio Luna
       rect:
         serializedVersion: 2
         x: 1178
@@ -223,7 +223,7 @@ TextureImporter:
         width: 294
         height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_4
+      name: Juan Luna
       rect:
         serializedVersion: 2
         x: 1515
@@ -244,7 +244,7 @@ TextureImporter:
         width: 293
         height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,15 +257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_5
+      name: Emilio Aguinado
       rect:
         serializedVersion: 2
         x: 1851
-        y: 585
+        y: 587
         width: 294
         height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_6
+      name: Josefa
       rect:
         serializedVersion: 2
         x: 505
@@ -286,7 +286,7 @@ TextureImporter:
         width: 294
         height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_7
+      name: Melchora Aquino
       rect:
         serializedVersion: 2
         x: 842
@@ -307,7 +307,7 @@ TextureImporter:
         width: 293
         height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_8
+      name: Prumassuri
       rect:
         serializedVersion: 2
         x: 1178
@@ -328,7 +328,7 @@ TextureImporter:
         width: 294
         height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_9
+      name: Jose Rizal
       rect:
         serializedVersion: 2
         x: 1515
@@ -349,7 +349,7 @@ TextureImporter:
         width: 293
         height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,15 +362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: character select buttons_10
+      name: Teresa Magbanua
       rect:
         serializedVersion: 2
         x: 1851
-        y: 230
+        y: 228
         width: 294
         height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -393,17 +393,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Teresa Magbanua: 1494547397
       Exit: -412571993
-      character select buttons_7: -1486604520
-      character select buttons_6: 1762310367
-      character select buttons_2: -1194899762
-      character select buttons_5: 2033368687
-      character select buttons_10: 1494547397
-      character select buttons_4: -1920713598
-      character select buttons_9: 2065444616
-      character select buttons_3: 1669261105
-      character select buttons_8: -1780585987
-      character select buttons_1: -1812983944
+      Prumassuri: -1780585987
+      Melchora Aquino: -1486604520
+      Juan Luna: -1920713598
+      Josefa: 1762310367
+      Emilio Aguinado: 2033368687
+      Antonio Luna: 1669261105
+      Andres Bonifacio: -1194899762
+      Jose Rizal: 2065444616
+      Gabriel Silang: -1812983944
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

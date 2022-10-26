@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: Carabao
   enemyMaxhealth: 200
-  enemyDamage: 10
+  enemyDamage: 25
   enemyMovespeed: 1

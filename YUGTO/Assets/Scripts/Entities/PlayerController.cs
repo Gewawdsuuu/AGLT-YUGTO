@@ -16,10 +16,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxHealth;
     public float currentHealth;
 
-    [SerializeField] private float maxMana;
+    public float maxMana;
     public float currentMana;
 
     public HealthBar healthBar;
+    public ManaBar manaBar;
 
     private bool isFacingLeft = true;
 
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         currentMana = maxMana;
 
         healthBar.SetMaxHealth(maxHealth);
+        manaBar.SetMaxMana(maxMana);
         isDead = false;
     }
 

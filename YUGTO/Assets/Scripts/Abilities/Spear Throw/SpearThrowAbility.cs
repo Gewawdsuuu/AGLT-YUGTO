@@ -5,21 +5,23 @@ using UnityEngine.UI;
 
 public class SpearThrowAbility : MonoBehaviour
 {
-    //public RectTransform skillsPanel;
-
     public ProjectileSkills ability;
     public Image ability1Image;
-    public Button ability1Button;
+    public PlayerController playerController;
+
+    public ManaBar manaBar;
 
     private bool isCooldown = false;
 
     public Animator animator;
 
+    [HideInInspector] public RectTransform skillsPanel;
     private void Start()
     {
+        skillsPanel = GameObject.Find("Skills Panel").GetComponent<RectTransform>();
+        SpawnButton();
         ability1Image.fillAmount = 0;
 
-        ability1Button.onClick.AddListener(() => AbilitySpawn());
     }
 
     private void Update()
@@ -34,18 +36,23 @@ public class SpearThrowAbility : MonoBehaviour
                 isCooldown = false;
             }
         }
+
+        manaBar.SetMana(playerController.currentMana);
     }
 
-    //public void SpawnButton()
-    //{
-    //    GameObject go = Instantiate(ability.skillButtonPrefab) as GameObject;
-    //    go.transform.SetParent(skillsPanel, false);
-    //    go.transform.localScale = new Vector3(1, 1, 1);
+    public void SpawnButton()
+    {
+        GameObject go = Instantiate(ability.skillButtonPrefab) as GameObject;
+        go.transform.SetParent(skillsPanel, false);
+        go.transform.localScale = new Vector3(1, 1, 1);
 
-    //    Button tempButton = go.GetComponent<Button>();
+        var cooldownImage = go.transform.GetChild(1);
+        ability1Image = cooldownImage.GetComponent<Image>();
 
-    //    tempButton.onClick.AddListener(() => AbilitySpawn());
-    //}
+        Button tempButton = go.GetComponent<Button>();
+
+        tempButton.onClick.AddListener(() => AbilitySpawn());
+    }
 
     public void AbilitySpawn()
     {
@@ -54,6 +61,8 @@ public class SpearThrowAbility : MonoBehaviour
             StartCoroutine(SpearSpawn());
             isCooldown = true;
             ability1Image.fillAmount = 1;
+            playerController.currentMana -= ability.abilityManacost;
+            manaBar.SetMana(playerController.currentMana);
         }
     }
 

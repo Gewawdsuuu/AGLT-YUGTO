@@ -9,6 +9,9 @@ using UnityEngine.UI;
 
 public class HeroSelection : MonoBehaviour
 {
+    [Header("Heroes to be Instantiated on Level")]
+
+
     public static string levelName;
 
     public Toggle[] heroToggles;
@@ -20,6 +23,14 @@ public class HeroSelection : MonoBehaviour
         selectedHeroes = 0;
         Debug.Log("(HeroSelection Scene) Current Selected Level: " + levelName);
 
+        for (int i = 0; i < heroToggles.Length; i++)
+        {
+            if (heroToggles[i].GetComponent<HeroToggleHandler>().hero.isHeroUnlocked == false)
+            {
+                heroToggles[i].interactable = false;
+            }
+        }
+
     }
 
     private void Update()
@@ -29,7 +40,10 @@ public class HeroSelection : MonoBehaviour
         {
             if (selectedHeroes < maxHeroes)
             {
-                heroToggles[i].interactable = true;
+                if (heroToggles[i].GetComponent<HeroToggleHandler>().hero.isHeroUnlocked)
+                {
+                    heroToggles[i].interactable = true;
+                }
             }
             else
             {

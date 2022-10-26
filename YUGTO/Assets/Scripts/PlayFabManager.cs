@@ -12,9 +12,6 @@ public class PlayFabManager : MonoBehaviour
 {
     public static PlayFabManager instance;
 
-    [Header("PlayFabCharacterData")]
-    public PlayFabCharacterData characterData;
-
     public static int levelsUnlocked;
     public static int goldValue;
 

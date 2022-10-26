@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bca3c38a47178048ae7d0d3d5d75c7d, type: 3}
   m_Name: EmilioAguinaldo
   m_EditorClassIdentifier: 
-  heroName: Emilio
+  heroId: hero_Emilio
+  heroName: Emilio Aguinaldo
+  isHeroUnlocked: 1
   heroClass: 1
   currentHealth: 0
   maxHealth: 300
@@ -30,12 +32,5 @@ MonoBehaviour:
   agility: 1
   intelligence: 1
   skillPoints: 0
-  ability1Name: Star Shower
-  ability1Description: "Sends a shower of arrows\r that damages all enemies\r in
-    the area."
-  ability1Damage: 75
-  ability1Manacost: 20
-  ability2Name: Double Shot
-  ability2Description: Fires 2 bullets that damages enemies in a line.
-  ability2Damage: 25
-  ability2Manacost: 20
+  ability1: Star Shower
+  ability2: Double Shot

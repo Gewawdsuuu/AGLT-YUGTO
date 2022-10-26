@@ -13,7 +13,9 @@ public enum HeroClass
 
 public abstract class Heroes : ScriptableObject
 {
+    public string heroId;
     public string heroName;
+    public bool isHeroUnlocked;
     public HeroClass heroClass;
 
     [Header("Base Stats")]
@@ -41,13 +43,6 @@ public abstract class Heroes : ScriptableObject
     public float skillPoints;
 
     [Header("Abilities")]
-    public string ability1Name;
-    [TextArea(5, 10)] public string ability1Description;
-    public float ability1Damage;
-    public float ability1Manacost;
-
-    public string ability2Name;
-    [TextArea(5, 10)] public string ability2Description;
-    public float ability2Damage;
-    public float ability2Manacost;
+    public string ability1;
+    public string ability2;
 }

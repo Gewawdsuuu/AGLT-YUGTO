@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RareClass : MonoBehaviour
+[CreateAssetMenu(fileName = "New Rare Class", menuName = "Heroes/Class/Rare")]
+public class RareClass : Heroes
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        heroClass = HeroClass.Rare;
     }
 }
