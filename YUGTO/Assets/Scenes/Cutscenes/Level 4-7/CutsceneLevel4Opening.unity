@@ -4272,7 +4272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306db6eb05c66d84b80aa11a75665cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: CutsceneLevel4Ending
+  SceneName: Level 4
 --- !u!114 &1087950102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5097,8 +5097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be35df19ebdb744eaa97f417b7db0bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "I am Jos\xE9 Protacio Rizal Mercado y Alonso Realonda. I am known as Plaridel.
-    You call me that or by my first name, Jose. But never, ever call me \u201CPepe.\u201D
+  input: "I am Jos\xE9 Protacio Rizal Mercado y Alonso Realonda. I am known as Laong
+    Laan. You call me that or by my first name, Jose. But never, ever call me \u201CPepe.\u201D
     That is a name reserved for a few only."
   textcolor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 11400000, guid: 5eb1db78cc0f41144b031056e7601e90, type: 2}

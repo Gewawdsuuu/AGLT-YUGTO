@@ -350,7 +350,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4754380456468081362}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.7428, y: 13.9, z: 0}
   m_LocalScale: {x: 4.414736, y: 4.414736, z: 4.414736}
   m_ConstrainProportionsScale: 0
@@ -424,6 +424,8 @@ MonoBehaviour:
   maxHealth: 0
   floatingTextPrefab: {fileID: 9201720336315999016, guid: ae2a568567129d64f9ab2dd06dd3f23f, type: 3}
   healthBar: {fileID: 4754380454957416462}
+  minimumGoldDrop: 50
+  maximumGoldDrop: 100
 --- !u!114 &4754380456468081357
 MonoBehaviour:
   m_ObjectHideFlags: 0

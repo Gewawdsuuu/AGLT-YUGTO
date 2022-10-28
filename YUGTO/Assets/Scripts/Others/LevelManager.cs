@@ -13,8 +13,8 @@ public class LevelManager : MonoBehaviour
     public GameObject levelCompletePanel;
     public GameObject levelFailedPanel;
 
-    private static int levelsUnlocked;
-    private static int currentLevel;
+    public static int levelsUnlocked;
+    public static int currentLevel;
 
     private bool levelDone = false;
 
@@ -66,6 +66,41 @@ public class LevelManager : MonoBehaviour
     {
         PlayFabManager.instance.GetPlayerLevelData();
         StartCoroutine(LevelWaiter());
+    }
+
+    public void OnNextQuizLevelSelect()
+    {
+        if (currentLevel == 2)
+        {
+            currentLevel = 2;
+            SceneManager.LoadScene("QuizLevel1-3");
+        }
+        else if (currentLevel == 6)
+        {
+            currentLevel = 6;
+            SceneManager.LoadScene("QuizLevel4-7");
+        }
+        else if (currentLevel == 9)
+        {
+            currentLevel = 9;
+            SceneManager.LoadScene("QuizLevel8-10");
+        }
+    }
+
+    public void OnNextCutsceneSelect()
+    {
+        if (currentLevel == 2)
+        {
+            SceneManager.LoadScene("CutsceneLevel1Ending");
+        }
+        else if (currentLevel == 6)
+        {
+            SceneManager.LoadScene("CutsceneLevel4Ending");
+        }
+        else if (currentLevel == 9)
+        {
+            SceneManager.LoadScene("CutsceneLevel8Ending");
+        }
     }
 
     public void OnRetrySelect()

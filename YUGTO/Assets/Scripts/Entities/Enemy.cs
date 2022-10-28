@@ -17,6 +17,10 @@ public class Enemy : MonoBehaviour
     public HealthBar healthBar;
 
     private string goldText;
+
+    [Header("Drop Settings")]
+    public int minimumGoldDrop;
+    public int maximumGoldDrop;
     private int RandomGold = 0;
 
     // Start is called before the first frame update
@@ -46,7 +50,7 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         Debug.Log("Enemy is dead!");
-        RandomGold = Random.Range(50, 100);
+        RandomGold = Random.Range(minimumGoldDrop, maximumGoldDrop);
         goldText =  "+" + RandomGold.ToString() + " Gold!";
         // Die Animation
 

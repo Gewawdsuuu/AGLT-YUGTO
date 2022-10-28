@@ -10,6 +10,11 @@ namespace DialogueSystem
         [SerializeField] private string SceneName;
         private string currentScene;
 
+        private void Start()
+        {
+            Time.timeScale = 1.0f;
+        }
+
         private void Awake()
         {
             StartCoroutine(dialogueSequence());

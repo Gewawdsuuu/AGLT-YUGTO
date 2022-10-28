@@ -598,6 +598,8 @@ MonoBehaviour:
   maxHealth: 0
   floatingTextPrefab: {fileID: 9201720336315999016, guid: ae2a568567129d64f9ab2dd06dd3f23f, type: 3}
   healthBar: {fileID: 1463138725162956226}
+  minimumGoldDrop: 50
+  maximumGoldDrop: 100
 --- !u!114 &1463138726669415809
 MonoBehaviour:
   m_ObjectHideFlags: 0
