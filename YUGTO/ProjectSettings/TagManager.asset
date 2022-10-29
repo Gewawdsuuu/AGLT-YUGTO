@@ -49,6 +49,9 @@ TagManager:
   - name: Entity
     uniqueID: 2304742949
     locked: 0
+  - name: Skill Effects
+    uniqueID: 2626478575
+    locked: 0
   - name: HUD
     uniqueID: 3342968219
     locked: 0

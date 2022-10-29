@@ -10,12 +10,17 @@ public class SpearThrowAbility : MonoBehaviour
     public PlayerController playerController;
 
     public ManaBar manaBar;
+    public GameObject spawnPoint;
 
     private bool isCooldown = false;
 
     public Animator animator;
 
     [HideInInspector] public RectTransform skillsPanel;
+
+    GameObject go;
+    Button tempButton;
+
     private void Start()
     {
         skillsPanel = GameObject.Find("Skills Panel").GetComponent<RectTransform>();
@@ -37,28 +42,41 @@ public class SpearThrowAbility : MonoBehaviour
             }
         }
 
+        if (playerController.currentMana <= 0 || playerController.currentMana < ability.abilityManacost)
+        {
+            tempButton.interactable = false;
+            tempButton.enabled = false;
+            tempButton.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            tempButton.interactable = true;
+            tempButton.enabled = true;
+            tempButton.GetComponent<Image>().color = Color.white;
+        }
+
         manaBar.SetMana(playerController.currentMana);
     }
 
     public void SpawnButton()
     {
-        GameObject go = Instantiate(ability.skillButtonPrefab) as GameObject;
+        go = Instantiate(ability.skillButtonPrefab) as GameObject;
         go.transform.SetParent(skillsPanel, false);
         go.transform.localScale = new Vector3(1, 1, 1);
 
         var cooldownImage = go.transform.GetChild(1);
         ability1Image = cooldownImage.GetComponent<Image>();
 
-        Button tempButton = go.GetComponent<Button>();
+        tempButton = go.GetComponent<Button>();
 
         tempButton.onClick.AddListener(() => AbilitySpawn());
     }
 
     public void AbilitySpawn()
     {
-        if (isCooldown == false)
+        if (isCooldown == false && playerController.currentMana > 0 && playerController.currentMana >= ability.abilityManacost)
         {
-            StartCoroutine(SpearSpawn());
+            SpearSpawn();
             isCooldown = true;
             ability1Image.fillAmount = 1;
             playerController.currentMana -= ability.abilityManacost;
@@ -66,10 +84,9 @@ public class SpearThrowAbility : MonoBehaviour
         }
     }
 
-    IEnumerator SpearSpawn()
+    public void SpearSpawn()
     {
         animator.SetTrigger("Attack2");
-        yield return new WaitForSeconds(1f);
-        GameObject newSpearThrowObject = Instantiate(ability.abilityPrefab, transform.position + (transform.forward * 2), transform.rotation);
+        GameObject newSpearThrowObject = Instantiate(ability.abilityPrefab, spawnPoint.transform.position, transform.rotation * Quaternion.Euler(0f, 0f, 90f));
     }
 }

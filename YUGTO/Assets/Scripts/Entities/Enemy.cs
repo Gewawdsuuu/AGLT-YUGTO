@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
 
     private float currentHealth;
     public HealthBar healthBar;
+    public bool isDead = false;
 
     private string goldText;
 
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
 
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        isDead = false;
     }
 
     public void TakeDamage(float damage)
@@ -49,6 +51,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        isDead = true;
         Debug.Log("Enemy is dead!");
         RandomGold = Random.Range(minimumGoldDrop, maximumGoldDrop);
         goldText =  "+" + RandomGold.ToString() + " Gold!";

@@ -12,8 +12,12 @@ public class DoubleShotAbility : MonoBehaviour
     public PlayerController playerController;
 
     public ManaBar manaBar;
+    public GameObject spawnPoint;
 
     public Animator animator;
+
+    GameObject go;
+    Button tempButton;
 
     private bool isCooldown = false;
 
@@ -38,26 +42,39 @@ public class DoubleShotAbility : MonoBehaviour
             }
         }
 
+        if (playerController.currentMana <= 0 || playerController.currentMana < ability.abilityManacost)
+        {
+            tempButton.interactable = false;
+            tempButton.enabled = false;
+            tempButton.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            tempButton.interactable = true;
+            tempButton.enabled = true;
+            tempButton.GetComponent<Image>().color = Color.white;
+        }
+
         manaBar.SetMana(playerController.currentMana);
     }
 
     public void SpawnButton()
     {
-        GameObject go = Instantiate(ability.skillButtonPrefab) as GameObject;
+        go = Instantiate(ability.skillButtonPrefab) as GameObject;
         go.transform.SetParent(skillsPanel, false);
         go.transform.localScale = new Vector3(1, 1, 1);
 
         var cooldownImage = go.transform.GetChild(1);
         ability1Image = cooldownImage.GetComponent<Image>();
 
-        Button tempButton = go.GetComponent<Button>();
+        tempButton = go.GetComponent<Button>();
 
         tempButton.onClick.AddListener(() => AbilitySpawn());
     }
 
     public void AbilitySpawn()
     {
-        if (isCooldown == false && playerController.currentMana > 0)
+        if (isCooldown == false && playerController.currentMana > 0 && playerController.currentMana >= ability.abilityManacost)
         {
             StartCoroutine(DoubleSpawn());
             isCooldown = true;
@@ -72,8 +89,8 @@ public class DoubleShotAbility : MonoBehaviour
     {
         animator.SetTrigger("Attack");
         yield return new WaitForSeconds(0.5f);
-        GameObject newDoubleShotObject = Instantiate(ability.abilityPrefab, transform.position + (transform.forward * 2), transform.rotation);
+        GameObject newDoubleShotObject = Instantiate(ability.abilityPrefab, spawnPoint.transform.position, transform.rotation);
         yield return new WaitForSeconds(0.5f);
-        newDoubleShotObject = Instantiate(ability.abilityPrefab, transform.position + (transform.forward * 2), transform.rotation);
+        newDoubleShotObject = Instantiate(ability.abilityPrefab, spawnPoint.transform.position, transform.rotation);
     }
 }

@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: Spear Throw
   m_EditorClassIdentifier: 
   abilityName: Spear Throw
-  abilityDescription: Throw a spear in a line
   abilityLevel: 1
   abilityDamage: 20
-  abilityCooldown: 5
-  abilityManacost: 20
+  abilityCooldown: 15
+  abilityManacost: 50
   abilitySprite: {fileID: 92336694, guid: c09f3693d0e6a8d4fbd373f3ae1b48e4, type: 3}
-  abilityPrefab: {fileID: 2869971370389275372, guid: 6780ac75c0d1c724e8c38b50b4051ef0, type: 3}
-  projectileSpeed: 100
+  abilityPrefab: {fileID: 8479787503705550703, guid: f822f643d5e56ee4e92699a488840e8f, type: 3}
+  projectileSpeed: 300
   skillButtonPrefab: {fileID: 3082835552784059528, guid: fb5c07298581759418c962a18aafe276, type: 3}

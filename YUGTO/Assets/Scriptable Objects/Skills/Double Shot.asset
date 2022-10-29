@@ -15,9 +15,9 @@ MonoBehaviour:
   abilityName: Double Shot
   abilityLevel: 1
   abilityDamage: 30
-  abilityCooldown: 5
-  abilityManacost: 20
+  abilityCooldown: 15
+  abilityManacost: 50
   abilitySprite: {fileID: 600706568, guid: abcff0f683fca444f8f045c7e53e4874, type: 3}
-  abilityPrefab: {fileID: 5396291084699635242, guid: 9e767b67d1885064ea5d25a6d0773823, type: 3}
-  projectileSpeed: 100
+  abilityPrefab: {fileID: 7396515950276558128, guid: dd6ed915fc54dcc488c92c947f1da86e, type: 3}
+  projectileSpeed: 300
   skillButtonPrefab: {fileID: 5020794650626283646, guid: f6f71cc068b8d6149b318863e9f56d82, type: 3}

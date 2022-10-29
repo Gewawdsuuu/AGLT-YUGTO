@@ -5,12 +5,14 @@ using UnityEngine;
 public class AttackAreaEnemy : MonoBehaviour
 {
     public Enemies enemy;
+    public EnemyAI enemyAI;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeDamage(enemy.enemyDamage);
+            enemyAI.target.GetComponent<PlayerController>().TakeDamage(enemy.enemyDamage);
+            //GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeDamage(enemy.enemyDamage);
         }
     }
 }

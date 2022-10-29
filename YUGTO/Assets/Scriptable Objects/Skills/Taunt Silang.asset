@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e6ecf4ef9658d45a104105d32a287c, type: 3}
+  m_Name: Taunt Silang
+  m_EditorClassIdentifier: 
+  abilityName: Taunt
+  abilityLevel: 1
+  abilityDamage: 0
+  abilityCooldown: 15
+  abilityManacost: 20
+  abilityPrefab: {fileID: 3281029183024353577, guid: 9721f54cd2ce8284c9f9f64828209612, type: 3}
+  abilityDuration: 7
+  skillButtonPrefab: {fileID: 3082835552784059528, guid: 4378a6ab06aa54d41b4113f8c8c3942f, type: 3}

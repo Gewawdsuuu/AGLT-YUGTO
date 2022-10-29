@@ -13,8 +13,6 @@ public abstract class Abilities : ScriptableObject
 
     public float abilityManacost;
 
-    public Sprite abilitySprite;
-
     public GameObject abilityPrefab;
 
 }

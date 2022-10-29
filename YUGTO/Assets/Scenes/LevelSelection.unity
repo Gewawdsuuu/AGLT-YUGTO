@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 395007005}
         m_TargetAssemblyTypeName: PlayFabLevelLoad, Assembly-CSharp
-        m_MethodName: OnLevelSelect
+        m_MethodName: OnLevel1Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

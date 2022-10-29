@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895747e115edcb140b340c0603b7b283, type: 3}
+  m_Name: Thunderbolt
+  m_EditorClassIdentifier: 
+  abilityName: Thunderbolt
+  abilityLevel: 1
+  abilityDamage: 20
+  abilityCooldown: 10
+  abilityManacost: 20
+  abilityPrefab: {fileID: 3190040081950659348, guid: 1045434ff9940a9449d7788f35a8f9d8, type: 3}
+  projectileSpeed: 0
+  skillButtonPrefab: {fileID: 3082835552784059528, guid: f9b74173c02e57747a6187b879efd926, type: 3}

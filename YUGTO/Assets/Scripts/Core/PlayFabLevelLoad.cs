@@ -42,6 +42,13 @@ public class PlayFabLevelLoad : MonoBehaviour
         DemoLevelHandler.currentLevel = int.Parse(selectedButton);
     }
 
+    public void OnLevel1Select()
+    {
+        string selectedButton = EventSystem.current.currentSelectedGameObject.name;
+        SceneManager.LoadScene("Level 1");
+        DemoLevelHandler.currentLevel = int.Parse(selectedButton);
+    }
+
     public void OnDemoSelect()
     {
         SceneManager.LoadScene("CutsceneDemoStart");

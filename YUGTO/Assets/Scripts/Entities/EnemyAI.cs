@@ -80,16 +80,4 @@ public class EnemyAI : MonoBehaviour
             animator.SetTrigger("Attack");
         }
     }
-
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (attacking)
-    //    {
-    //        if (collision.gameObject.tag == "Player")
-    //        {
-    //            GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeDamage(enemyDamage);
-    //        }
-    //    }
-    //}
 }
