@@ -16,7 +16,6 @@ public class PlayerAttack : MonoBehaviour
     private float timer = 0f;
     private Animator playerAnimator;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -49,9 +48,12 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        attacking = true;
-        attackArea.SetActive(attacking);
-        playerAnimator.SetTrigger("Attack");
+        if (attacking == false)
+        {
+            attacking = true;
+            attackArea.SetActive(attacking);
+            playerAnimator.SetTrigger("Attack");
+        }
     }
 
     
