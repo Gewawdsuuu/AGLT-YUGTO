@@ -51,6 +51,15 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        if (gameObject.name == "CarabaoEnemy")
+        {
+            AudioManager.Instance.PlaySFX("Enemy Death Boss");
+        }
+        else if (gameObject.name == "CarabaoSmallEnemy")
+        {
+            AudioManager.Instance.PlaySFX("Enemy Death Small");
+        }
+
         isDead = true;
         Debug.Log("Enemy is dead!");
         RandomGold = Random.Range(minimumGoldDrop, maximumGoldDrop);

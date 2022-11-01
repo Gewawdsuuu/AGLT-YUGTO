@@ -20,6 +20,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Instance.PlayMusic("Arcane Battle Music");
+
         levelsUnlocked = PlayFabManager.levelsUnlocked;
         currentLevel = int.Parse(HeroSelection.levelName);
     }
@@ -32,7 +34,7 @@ public class LevelManager : MonoBehaviour
             levelDone = true;
             LevelComplete();
         }
-        else if (GameObject.FindGameObjectsWithTag("Player").Length == 0)
+        else if (GameObject.FindGameObjectsWithTag("Player").Length == 0 && levelDone == false)
         {
             levelDone = true;
             LevelFailed();
@@ -41,6 +43,8 @@ public class LevelManager : MonoBehaviour
 
     private void LevelComplete()
     {
+        AudioManager.Instance.StopMusic("Arcane Battle Music");
+        AudioManager.Instance.PlaySFX("Level Cleared");
         if (levelsUnlocked <= (currentLevel + 1))
         {
             PlayFabManager.instance.GetLevelData();
@@ -52,6 +56,8 @@ public class LevelManager : MonoBehaviour
 
     private void LevelFailed()
     {
+        AudioManager.Instance.StopMusic("Arcane Battle Music");
+        AudioManager.Instance.PlaySFX("Level Failed");
         blurImage.SetActive(true);
         levelFailedPanel.SetActive(true);
         Time.timeScale = 0f;

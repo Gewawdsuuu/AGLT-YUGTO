@@ -13,6 +13,8 @@ public class DemoLevelHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager.Instance.PlayMusic("Demo Reading Music");
+
         levelsUnlocked = PlayFabManager.levelsUnlocked;
 
         Debug.Log(currentLevel);

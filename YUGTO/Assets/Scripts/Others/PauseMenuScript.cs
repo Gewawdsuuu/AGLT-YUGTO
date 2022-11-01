@@ -10,6 +10,7 @@ public class PauseMenuScript : MonoBehaviour
 
     public void OnPauseSelect()
     {
+        AudioManager.Instance.PauseMusic("Arcane Battle Music");
         blurImage.SetActive(true);
         pauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
@@ -17,6 +18,7 @@ public class PauseMenuScript : MonoBehaviour
 
     public void OnResumeSelect()
     {
+        AudioManager.Instance.PlayMusic("Arcane Battle Music");
         blurImage.SetActive(false);
         pauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;

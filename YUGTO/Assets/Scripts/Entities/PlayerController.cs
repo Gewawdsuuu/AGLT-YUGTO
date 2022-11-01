@@ -101,6 +101,7 @@ public class PlayerController : MonoBehaviour
         if (isDead)
         {
             playerAnimator.SetBool("isDead", true);
+            AudioManager.Instance.PlaySFX("Character Death");
             // Disable Player
             Destroy(gameObject, 2f);
         }

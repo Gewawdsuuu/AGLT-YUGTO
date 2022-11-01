@@ -42,7 +42,7 @@ public class SpearThrowAbility : MonoBehaviour
             }
         }
 
-        if (playerController.currentMana <= 0 || playerController.currentMana < ability.abilityManacost)
+        if (playerController.currentMana <= 0 || playerController.currentMana < ability.abilityManacost || playerController.isDead == true)
         {
             tempButton.interactable = false;
             tempButton.enabled = false;
@@ -76,6 +76,7 @@ public class SpearThrowAbility : MonoBehaviour
     {
         if (isCooldown == false && playerController.currentMana > 0 && playerController.currentMana >= ability.abilityManacost)
         {
+            AudioManager.Instance.PlaySFX("Spear Throw");
             SpearSpawn();
             isCooldown = true;
             ability1Image.fillAmount = 1;

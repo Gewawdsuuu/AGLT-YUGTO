@@ -94,11 +94,17 @@ public class MenuHandler : MonoBehaviour
 
     public void PlayOnClick()
     {
-        SceneManager.LoadScene(playButtonScene);
+        StartCoroutine(WaitBeforePlay());
     }
 
     public void ShopOnClick()
     {
         SceneManager.LoadScene("Shop");
+    }
+
+    IEnumerator WaitBeforePlay()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(playButtonScene);
     }
 }

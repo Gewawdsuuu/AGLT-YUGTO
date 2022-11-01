@@ -39,7 +39,7 @@ public class TauntAbility : MonoBehaviour
             }
         }
 
-        if (playerController.currentMana <= 0 || playerController.currentMana < ability.abilityManacost)
+        if (playerController.currentMana <= 0 || playerController.currentMana < ability.abilityManacost || playerController.isDead == true)
         {
             tempButton.interactable = false;
             tempButton.enabled = false;

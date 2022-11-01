@@ -18373,10 +18373,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeresaMagbanua
       objectReference: {fileID: 0}
-    - target: {fileID: 11902430560375587, guid: 5fb7a0a4309720d4498d80f450335bda, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 11902430560375645, guid: 5fb7a0a4309720d4498d80f450335bda, type: 3}
       propertyPath: m_RootOrder
       value: 16
