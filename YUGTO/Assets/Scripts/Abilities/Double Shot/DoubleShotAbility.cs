@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DoubleShotAbility : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class DoubleShotAbility : MonoBehaviour
     public Button ability1Button;
 
     public PlayerController playerController;
+    public TextMeshProUGUI manacostText;
 
     public ManaBar manaBar;
     public GameObject spawnPoint;
@@ -66,6 +68,10 @@ public class DoubleShotAbility : MonoBehaviour
 
         var cooldownImage = go.transform.GetChild(1);
         ability1Image = cooldownImage.GetComponent<Image>();
+
+        var cooldownText = go.transform.GetChild(2);
+        manacostText = cooldownText.GetComponent<TextMeshProUGUI>();
+        manacostText.text = ability.abilityManacost.ToString();
 
         tempButton = go.GetComponent<Button>();
 

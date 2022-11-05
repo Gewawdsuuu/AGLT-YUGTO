@@ -467,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Round Buttons_15
+      name: Mana Button
       rect:
         serializedVersion: 2
         x: 2050
@@ -778,8 +778,8 @@ TextureImporter:
       Play: -95548545
       Round Buttons_11: -1657837675
       Sound: -1141489956
-      Round Buttons_15: -1284750846
       Round Buttons_27: -561135731
+      Mana Button: -1284750846
       Round Buttons_25: -655393864
       Next: 2112568182
       Round Buttons_24: -1506957774

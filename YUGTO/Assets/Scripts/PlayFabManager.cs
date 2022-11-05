@@ -181,6 +181,7 @@ public class PlayFabManager : MonoBehaviour
             TitleId = "C33F5"
         };
         PlayFabClientAPI.SendAccountRecoveryEmail(request, OnPasswordReset, OnResetError);
+        forgotEmailInput.text = "";
     }
 
     void OnResetError(PlayFabError error)

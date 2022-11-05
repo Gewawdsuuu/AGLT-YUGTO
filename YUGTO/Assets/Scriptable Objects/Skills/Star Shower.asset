@@ -19,4 +19,4 @@ MonoBehaviour:
   abilityManacost: 50
   abilityPrefab: {fileID: 3903767614306290790, guid: b296eaac2088fd0438ebeae21d16462c, type: 3}
   projectileSpeed: 50
-  skillButtonPrefab: {fileID: 3082835552784059528, guid: 84492b9b659109d4c9b194463f86fe3c, type: 3}
+  skillButtonPrefab: {fileID: 7576229617765393676, guid: 84492b9b659109d4c9b194463f86fe3c, type: 3}

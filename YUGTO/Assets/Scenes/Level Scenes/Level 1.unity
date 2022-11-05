@@ -18224,10 +18224,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4106192744382140483, guid: f44fd4cb9b1207a42a13c83553951655, type: 3}
-      propertyPath: timeToAttack
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4106192744382140496, guid: f44fd4cb9b1207a42a13c83553951655, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -18377,10 +18373,6 @@ PrefabInstance:
     - target: {fileID: 11902430560375587, guid: 5fb7a0a4309720d4498d80f450335bda, type: 3}
       propertyPath: m_Name
       value: TeresaMagbanua
-      objectReference: {fileID: 0}
-    - target: {fileID: 11902430560375588, guid: 5fb7a0a4309720d4498d80f450335bda, type: 3}
-      propertyPath: timeToAttack
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11902430560375645, guid: 5fb7a0a4309720d4498d80f450335bda, type: 3}
       propertyPath: m_RootOrder

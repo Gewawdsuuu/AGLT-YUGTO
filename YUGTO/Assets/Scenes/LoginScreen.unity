@@ -946,6 +946,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9023170940038573343, guid: eeb98f7f0c4936945a2c69d33fdf85ce, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170941013994322, guid: eeb98f7f0c4936945a2c69d33fdf85ce, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9023170941013994322, guid: eeb98f7f0c4936945a2c69d33fdf85ce, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
@@ -1347,6 +1355,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultPanel: {fileID: 152535248}
   forgotPanel: {fileID: 1092501514}
+  emailInput: {fileID: 1534566895}
+  passwordInput: {fileID: 1211044953}
 --- !u!1 &609232080
 GameObject:
   m_ObjectHideFlags: 0

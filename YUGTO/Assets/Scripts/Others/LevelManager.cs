@@ -23,7 +23,9 @@ public class LevelManager : MonoBehaviour
         AudioManager.Instance.PlayMusic("Arcane Battle Music");
 
         levelsUnlocked = PlayFabManager.levelsUnlocked;
-        currentLevel = int.Parse(HeroSelection.levelName);
+
+        if (SceneManager.GetActiveScene().name != "Level 1")
+            currentLevel = int.Parse(HeroSelection.levelName);
     }
 
     // Update is called once per frame

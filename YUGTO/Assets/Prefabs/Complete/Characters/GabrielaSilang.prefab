@@ -851,7 +851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hero: {fileID: 11400000, guid: 4a7b36084b1d60f4e912b731ff09620b, type: 2}
   attackArea: {fileID: 8309200537456320144}
-  timeToAttack: 1
+  timeToAttack: 3
   playerDamage: 0
   attacking: 0
   enemyLayers:
@@ -872,6 +872,7 @@ MonoBehaviour:
   ability: {fileID: 11400000, guid: 9cb9645cb9c97f14e8e0118d54ec0655, type: 2}
   ability1Image: {fileID: 0}
   playerController: {fileID: 5407347766616450046}
+  manacostText: {fileID: 0}
   manaBar: {fileID: 530297245520569721}
   spawnPoint: {fileID: 5407347766277011646}
   animator: {fileID: 4106192744382140508}
@@ -891,6 +892,7 @@ MonoBehaviour:
   ability: {fileID: 11400000, guid: d18da10dbcac62e43b8b77de6ad75042, type: 2}
   ability1Image: {fileID: 0}
   playerController: {fileID: 5407347766616450046}
+  manacostText: {fileID: 0}
   manaBar: {fileID: 530297245520569721}
   tauntSpawnPoint: {fileID: 5407347766244488990}
   skillsPanel: {fileID: 0}
