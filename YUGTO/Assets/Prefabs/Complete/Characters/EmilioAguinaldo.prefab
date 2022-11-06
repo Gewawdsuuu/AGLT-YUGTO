@@ -1235,7 +1235,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8465336309388680776}
-  m_LocalRotation: {x: 0, y: 0, z: 0.99815255, w: 0.060758177}
+  m_LocalRotation: {x: 0, y: 0, z: 0.99815255, w: 0.060757935}
   m_LocalPosition: {x: 0.06760971, y: 0.19955912, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1298,7 +1298,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8465336309703367511}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071082, w: 0.7071054}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071084, w: 0.7071052}
   m_LocalPosition: {x: 0.27719262, y: -0.00000001726646, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1566,7 +1566,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8465336309924281907}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 70.6, y: 3.708, z: 0}
   m_LocalScale: {x: 5.838687, y: 5.838687, z: 5.838687}
   m_ConstrainProportionsScale: 0
@@ -1788,7 +1788,7 @@ MonoBehaviour:
   maxMana: 0
   currentMana: 0
   healthBar: {fileID: 7605263605909113378}
-  manaBar: {fileID: 0}
+  manaBar: {fileID: 7605263606903025403}
 --- !u!114 &3625439810659025649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,6 +1825,7 @@ MonoBehaviour:
   ability1Image: {fileID: 0}
   ability1Button: {fileID: 0}
   playerController: {fileID: 5371047792988749180}
+  manacostText: {fileID: 0}
   manaBar: {fileID: 7605263606903025403}
   spawnPoint: {fileID: 8411181049494862059}
   animator: {fileID: 8465336309924281913}
@@ -1844,6 +1845,7 @@ MonoBehaviour:
   ability: {fileID: 11400000, guid: a70284c6934c6944a9a15e840eaa7962, type: 2}
   ability1Image: {fileID: 0}
   playerController: {fileID: 5371047792988749180}
+  manacostText: {fileID: 0}
   manaBar: {fileID: 7605263606903025403}
   animator: {fileID: 8465336309924281913}
   enemyGameObjects: []

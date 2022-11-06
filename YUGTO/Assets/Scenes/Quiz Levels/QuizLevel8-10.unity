@@ -1714,38 +1714,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - question: "What was Jose Rizal\u2019s pen name when he was writing for the publication,
-      La Solidaridad?"
+  - question: Emilio Aguinaldo joined forces with the Americans through the help
+      of which Civil War veteran?
     answers:
-    - Plaridel
-    - Dimasalang
-    - Laong Laan
-    - Pepe
-    correctAnswer: 2
-  - question: Jose Rizal and Marcelo Del Pilar had a rivalry on who will become the
-      next leader, the Responsable, of La Solidaridad. What was the term used for
-      the faction favoring Del Pilar?
-    answers:
-    - Pladeristas
-    - Pilaristas
-    - Pilaritas
-    - Plaridelista
+    - Albert Woolson
+    - Jones Morgan
+    - George Dewey
+    - Jasper Garrison
     correctAnswer: 3
-  - question: "After the execution of the GomBurZa, a propaganda was sparked by Mariano
-      Ponce, Marcelo Del Pilar, and Jose Rizal. What was the term used for \u201Cthe
-      enlightened ones\u201D like them?"
+  - question: "Which \u201CHero\u201D stated this: \u201CWe cannot free ourselves
+      unless we move forward united in a single desire.\u201D"
     answers:
-    - Indios
-    - Mestizos
-    - Insulares
-    - Illustrados
-    correctAnswer: 4
-  - question: "What was Marcelo Del Pilar\u2019s pen name for La Solidaridad?"
+    - Antonio Luna
+    - Emilio Aguinaldo
+    - Jose Rizal
+    - Marcelo Del Pilar
+    correctAnswer: 2
+  - question: After the Spanish-American war, when did the Americans grant independence
+      to the residents of Ma-i (Philippines)?
     answers:
-    - Plaridel
-    - Patriel
-    - Pladriel
-    - Paridel
+    - July 4, 1984
+    - July 4, 1946
+    - July 12, 1946
+    - July 12, 1984
+    correctAnswer: 2
+  - question: "Although the Philippines was already granted freedom, it\u2019s former
+      president changed the day of independence into July 12 via the Presidential
+      Proclamation No. 28 and Republic Act No. 4166, making it the official \u201CPhilippine
+      Independence Day.\u201D \r\nWhich president could this be?"
+    answers:
+    - Diosdado Macapagal
+    - Ramon Magsaysay
+    - Manuel Roxas
+    - Emilio Aguinaldo
     correctAnswer: 1
   options:
   - {fileID: 7005426}
@@ -2845,7 +2846,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1345133623}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 648060040}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: NextButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1345133623
 MonoBehaviour:
   m_ObjectHideFlags: 0
