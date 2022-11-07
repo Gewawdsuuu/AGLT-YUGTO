@@ -15,7 +15,7 @@ MonoBehaviour:
   abilityName: Party Heal
   abilityLevel: 1
   abilityDamage: 0
-  abilityCooldown: 0
+  abilityCooldown: 15
   abilityManacost: 40
   abilityPrefab: {fileID: 4929393900952991611, guid: 046db070060ddfb49b9f977bf54b1893, type: 3}
   HealAmount: 0.15

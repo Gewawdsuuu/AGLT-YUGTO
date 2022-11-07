@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Heroes hero;
+    public GameObject deathEffectPrefab;
 
     private Rigidbody2D rb2D;
     private Animator playerAnimator;
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour
     public ManaBar manaBar;
 
     private bool isFacingLeft = true;
+
+    private GameObject deathEffect;
 
     void Start()
     {
@@ -109,13 +112,23 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Player is Dead!");
         // Die Animation
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        Destroy(gameObject.GetComponent<Rigidbody2D>());
 
         if (isDead)
         {
             playerAnimator.SetBool("isDead", true);
             AudioManager.Instance.PlaySFX("Character Death");
             // Disable Player
-            Destroy(gameObject, 2f);
+            StartCoroutine(WaitforDeath());
         }
+    }
+
+    IEnumerator WaitforDeath()
+    {
+        deathEffect = Instantiate(deathEffectPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y - 2, this.gameObject.transform.position.z), this.gameObject.transform.rotation);
+        yield return new WaitForSeconds(2f);
+        Destroy(deathEffect);
+        Destroy(gameObject);
     }
 }

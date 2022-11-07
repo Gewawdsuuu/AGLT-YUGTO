@@ -94,6 +94,7 @@ public class PartyHealAbility : MonoBehaviour
     {
         if (isCooldown == false && playerController.currentMana > 0 && playerController.currentMana >= ability.abilityManacost)
         {
+            AudioManager.Instance.PlaySFX("Light Spell");
             PartyHealSpawn();
             isCooldown = true;
             ability1Image.fillAmount = 1;

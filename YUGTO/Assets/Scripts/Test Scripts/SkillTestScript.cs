@@ -5,28 +5,29 @@ using UnityEngine;
 public class SkillTestScript : MonoBehaviour
 {
     public GameObject skillPrefab;
-    public Transform player;
 
-    public List<GameObject> playerGameObjects = new List<GameObject>();
+    public List<GameObject> enemyGameObjects = new List<GameObject>();
 
     private void Start()
     {
-        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Player"))
+        GameObject newPurifyObject;
+        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Enemy"))
         {
-            playerGameObjects.Add(fooObj);
+            enemyGameObjects.Add(fooObj);
+        }
+
+        for (int i = 0; i < enemyGameObjects.Count; i++)
+        {
+            newPurifyObject = Instantiate(skillPrefab, new Vector3(enemyGameObjects[i].transform.position.x, enemyGameObjects[i].transform.position.y, enemyGameObjects[i].transform.position.z), transform.rotation);
         }
     }
 
     private void Update()
     {
-        GameObject newPartyHealObject;
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            for (int i = 0; i < playerGameObjects.Count; i++)
-            {
-                newPartyHealObject = Instantiate(skillPrefab, new Vector3(playerGameObjects[i].transform.position.x, playerGameObjects[i].transform.position.y, playerGameObjects[i].transform.position.z), transform.rotation);
-            }
+
         }
     }
 }
