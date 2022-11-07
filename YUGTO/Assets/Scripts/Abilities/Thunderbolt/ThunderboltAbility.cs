@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ThunderboltAbility : MonoBehaviour
 {
     public ProjectileSkills ability;
     public Image ability1Image;
     public PlayerController playerController;
+    public TextMeshProUGUI manacostText;
 
     public ManaBar manaBar;
 
@@ -78,6 +80,10 @@ public class ThunderboltAbility : MonoBehaviour
 
         var cooldownImage = go.transform.GetChild(1);
         ability1Image = cooldownImage.GetComponent<Image>();
+
+        var cooldownText = go.transform.GetChild(2);
+        manacostText = cooldownText.GetComponent<TextMeshProUGUI>();
+        manacostText.text = ability.abilityManacost.ToString();
 
         tempButton = go.GetComponent<Button>();
 

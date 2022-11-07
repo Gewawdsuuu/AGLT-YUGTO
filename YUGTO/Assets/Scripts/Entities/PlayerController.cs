@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Player Parameters")]
     [SerializeField] private float moveSpeed;
-    [SerializeField] private float maxHealth;
+    public float maxHealth;
     public float currentHealth;
 
     public float maxMana;
@@ -74,6 +74,18 @@ public class PlayerController : MonoBehaviour
         Vector2 currentScale = transform.localScale;
         currentScale.x *= -1;
         transform.localScale = currentScale;
+    }
+
+    public void HealHealth(float healAmount)
+    {
+        currentHealth += healAmount;
+        healthBar.SetHealth(currentHealth);
+        Debug.Log("Healed Player Health: " + currentHealth);
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
 
     public void TakeDamage(float damage)

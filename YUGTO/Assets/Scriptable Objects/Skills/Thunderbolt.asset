@@ -16,7 +16,7 @@ MonoBehaviour:
   abilityLevel: 1
   abilityDamage: 20
   abilityCooldown: 10
-  abilityManacost: 20
+  abilityManacost: 25
   abilityPrefab: {fileID: 3190040081950659348, guid: 1045434ff9940a9449d7788f35a8f9d8, type: 3}
   projectileSpeed: 0
   skillButtonPrefab: {fileID: 1104177572152169187, guid: f9b74173c02e57747a6187b879efd926, type: 3}

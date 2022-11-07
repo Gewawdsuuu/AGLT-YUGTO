@@ -17,6 +17,6 @@ MonoBehaviour:
   abilityDamage: 15
   abilityCooldown: 15
   abilityManacost: 30
-  abilityPrefab: {fileID: 0}
+  abilityPrefab: {fileID: 3005865677650934548, guid: 302a20c5a7b20e54da6a195c755fd073, type: 3}
   abilityDuration: 2
   skillButtonPrefab: {fileID: 5885755144618419925, guid: ad407158cbcce0242a0fe6a450d8daff, type: 3}

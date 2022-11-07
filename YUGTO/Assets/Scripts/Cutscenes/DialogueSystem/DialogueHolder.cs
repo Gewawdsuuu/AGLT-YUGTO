@@ -12,7 +12,7 @@ namespace DialogueSystem
 
         private void Start()
         {
-            //AudioManager.Instance.PlayMusic("Reading Music All");
+            AudioManager.Instance.PlayMusic("Reading Music All");
             Time.timeScale = 1.0f;
         }
 

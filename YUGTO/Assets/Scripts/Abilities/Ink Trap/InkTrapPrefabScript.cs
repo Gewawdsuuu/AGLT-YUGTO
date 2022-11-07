@@ -5,38 +5,28 @@ using UnityEngine;
 public class InkTrapPrefabScript : MonoBehaviour
 {
     public TimedSkills timedSkills;
-    public Animator skillAnimator;
-    private BoxCollider2D collider;
-
+    private Animator skillAnimator;
     private float skillDuration;
-    private float timeColliding;
-    public float timeThreshold = 1f;
-    private bool beginDamage;
+    private GameObject enemyCol;
+    private float normalEnemySpeed;
 
     void Start()
     {
-        collider = gameObject.GetComponent<BoxCollider2D>();
         skillAnimator = gameObject.GetComponent<Animator>();
         skillDuration = timedSkills.abilityDuration;
-        beginDamage = false;
-        timeColliding = 0f;
-    }
-
-    void Update()
-    {
-        Debug.Log(timeColliding);
     }
 
     public void setIdleAnimation()
     {
         skillAnimator.SetInteger("state", 1);
-        beginDamage = true;
+        enemyCol.GetComponent<EnemyAI>().speed = 0f;
         StartCoroutine(WaitForDuration());
     }
 
     IEnumerator WaitForDuration()
     {
         yield return new WaitForSeconds(skillDuration);
+        enemyCol.GetComponent<EnemyAI>().speed = normalEnemySpeed;
         skillAnimator.SetInteger("state", 2);
     }
 
@@ -44,38 +34,15 @@ public class InkTrapPrefabScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(timedSkills.abilityDamage);
-            collider.enabled = false;
+            enemyCol = collision.gameObject;
+            normalEnemySpeed = collision.gameObject.GetComponent<EnemyAI>().speed;
         }
     }
 
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Enemy")
-    //    {
-    //        if (timeColliding < timeThreshold)
-    //        {
-    //            timeColliding += Time.deltaTime;
-    //        }
-    //        else
-    //        {
-    //            collision.gameObject.GetComponent<Enemy>().TakeDamage(timedSkills.abilityDamage);
-    //            timeColliding = 0f;
-    //        }
-    //    }
-    //}
-
-    public void ColliderReset()
+    public void TakeDamage()
     {
-        StartCoroutine(ResetCollider());
+        enemyCol.GetComponent<Enemy>().TakeDamage(timedSkills.abilityDamage);
     }
-
-    IEnumerator ResetCollider()
-    {
-        yield return new WaitForSeconds(0.5f);
-        collider.enabled = true;
-    }
-
 
     public void DestroyAfterAnimation()
     {

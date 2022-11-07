@@ -5,11 +5,28 @@ using UnityEngine;
 public class SkillTestScript : MonoBehaviour
 {
     public GameObject skillPrefab;
-    public Transform enemy;
+    public Transform player;
 
-    // Start is called before the first frame update
-    void Start()
+    public List<GameObject> playerGameObjects = new List<GameObject>();
+
+    private void Start()
     {
-        Instantiate(skillPrefab, new Vector3(enemy.transform.position.x, enemy.transform.position.y, enemy.transform.position.z), transform.rotation);
+        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Player"))
+        {
+            playerGameObjects.Add(fooObj);
+        }
+    }
+
+    private void Update()
+    {
+        GameObject newPartyHealObject;
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            for (int i = 0; i < playerGameObjects.Count; i++)
+            {
+                newPartyHealObject = Instantiate(skillPrefab, new Vector3(playerGameObjects[i].transform.position.x, playerGameObjects[i].transform.position.y, playerGameObjects[i].transform.position.z), transform.rotation);
+            }
+        }
     }
 }
