@@ -15,6 +15,7 @@ public abstract class Heroes : ScriptableObject
 {
     public string heroId;
     public string heroName;
+    public GameObject heroPrefab;
     public bool isHeroUnlocked;
     public HeroClass heroClass;
 

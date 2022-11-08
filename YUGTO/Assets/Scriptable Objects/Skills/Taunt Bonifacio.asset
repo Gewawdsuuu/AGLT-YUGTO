@@ -18,5 +18,5 @@ MonoBehaviour:
   abilityCooldown: 15
   abilityManacost: 20
   abilityPrefab: {fileID: 4777385290347075521, guid: 2b56c54bbf3ebfe4a8327d513d31cffe, type: 3}
-  abilityDuration: 7
+  abilityDuration: 4
   skillButtonPrefab: {fileID: 7092756717032970514, guid: 4378a6ab06aa54d41b4113f8c8c3942f, type: 3}

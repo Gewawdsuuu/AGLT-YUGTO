@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Bounds
+  - JoseRizal Skill
   layers:
   - Default
   - TransparentFX

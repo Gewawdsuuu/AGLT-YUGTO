@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroId: hero_Josefa
   heroName: Josefa Llanes Escoda
-  isHeroUnlocked: 0
+  heroPrefab: {fileID: 5844387811302157556, guid: eb072c10b78359c4083779b713ce54b3, type: 3}
+  isHeroUnlocked: 1
   heroClass: 2
   currentHealth: 0
   maxHealth: 300

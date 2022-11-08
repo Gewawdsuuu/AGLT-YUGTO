@@ -13,7 +13,7 @@ public class BoostMoralePrefabScript : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        rizalObject = GameObject.Find("JoseRizal");
+        rizalObject = GameObject.Find("JoseRizal(Clone)");
         rizalCurrentHealth = rizalObject.GetComponent<PlayerController>().maxHealth;
         
     }

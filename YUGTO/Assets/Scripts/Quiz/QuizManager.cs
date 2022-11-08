@@ -54,6 +54,7 @@ public class QuizManager : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        AudioManager.Instance.PlayMusic("Quiz Music");
     }
 
     public void GameOver()
@@ -73,6 +74,7 @@ public class QuizManager : MonoBehaviour
 
     public void NextButton()
     {
+        AudioManager.Instance.PlayMusic("Main Menu");
         StartCoroutine(LoadLevel());
     }
 
@@ -126,6 +128,7 @@ public class QuizManager : MonoBehaviour
     public void OnExitSelect()
     {
         SceneManager.LoadScene("LevelSelection");
+        AudioManager.Instance.PlayMusic("Main Menu");
     }
 
     IEnumerator WaitForNext()

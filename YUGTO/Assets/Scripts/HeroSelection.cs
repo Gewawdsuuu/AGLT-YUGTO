@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;
+using System;
 
 public class HeroSelection : MonoBehaviour
 {
-    [Header("Heroes to be Instantiated on Level")]
+    //[Header("Toggle Groups")]
+    //public ToggleGroup heroToggleGroup;
 
+    //[Header("Lists")]
+    public static List<string> selectedHeroName = new List<string>();
 
     public static string levelName;
 
@@ -20,6 +24,8 @@ public class HeroSelection : MonoBehaviour
 
     private void Start()
     {
+        selectedHeroName.Clear();
+
         selectedHeroes = 0;
         Debug.Log("(HeroSelection Scene) Current Selected Level: " + levelName);
 
@@ -51,6 +57,17 @@ public class HeroSelection : MonoBehaviour
                 {
                     heroToggles[i].interactable = false;
                 }
+            }
+        }
+    }
+
+    public void OnStartHeroSelect()
+    {
+        for (int i = 0; i < heroToggles.Length; i++)
+        {
+            if (heroToggles[i].isOn == true)
+            {
+                selectedHeroName.Add(heroToggles[i].name);
             }
         }
     }

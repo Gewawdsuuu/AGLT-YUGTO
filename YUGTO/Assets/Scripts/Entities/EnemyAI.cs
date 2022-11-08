@@ -19,7 +19,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private GameObject attackArea;
     [SerializeField] private float timeToAttack = 0.25f;
     [SerializeField] private float timer = 0f;
-    [SerializeField] private float enemyDamage;
+    public float enemyDamage;
     public bool attacking = false;
 
     float lastShot;
@@ -27,7 +27,6 @@ public class EnemyAI : MonoBehaviour
     private void Start()
     {
         // Set Enemy parameters based on enemy type
-        enemyDamage = enemyType.enemyDamage;
         speed = enemyType.enemyMovespeed;
 
         GameObject temp = GameObject.FindGameObjectWithTag("Player");

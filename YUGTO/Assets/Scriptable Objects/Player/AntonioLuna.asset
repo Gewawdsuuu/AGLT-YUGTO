@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroId: hero_antonio
   heroName: Antonio Luna
+  heroPrefab: {fileID: 3952484659915275316, guid: 41e1431111a9a284da897ca5aefadd7a, type: 3}
   isHeroUnlocked: 1
   heroClass: 4
   currentHealth: 0
   maxHealth: 300
   healthRegen: 0.15
   currentMana: 0
-  maxMana: 15
+  maxMana: 150
   manaRegen: 0.3
   armor: 10
   damage: 20

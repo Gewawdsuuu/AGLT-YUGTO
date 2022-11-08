@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroId: hero_Juan
   heroName: Juan Luna
-  isHeroUnlocked: 0
+  heroPrefab: {fileID: 4292741358578107945, guid: f877e4f7638787a49ab8704e19bdd522, type: 3}
+  isHeroUnlocked: 1
   heroClass: 3
   currentHealth: 0
   maxHealth: 300

@@ -28,7 +28,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         // Set Enemy parameters based on enemy type
-        maxHealth = enemyType.enemyMaxhealth;
 
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);

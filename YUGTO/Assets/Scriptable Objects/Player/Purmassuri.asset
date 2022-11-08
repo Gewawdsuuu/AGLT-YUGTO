@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroId: hero_Purmassuri
   heroName: Purmassuri
-  isHeroUnlocked: 0
+  heroPrefab: {fileID: 3651505775309320537, guid: 627f1c99fecda0843a7523382fd20778, type: 3}
+  isHeroUnlocked: 1
   heroClass: 3
   currentHealth: 0
   maxHealth: 300

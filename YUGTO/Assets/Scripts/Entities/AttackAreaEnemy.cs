@@ -11,7 +11,7 @@ public class AttackAreaEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            enemyAI.target.GetComponent<PlayerController>().TakeDamage(enemy.enemyDamage);
+            enemyAI.target.GetComponent<PlayerController>().TakeDamage(enemyAI.enemyDamage);
             //GameObject.FindWithTag("Player").GetComponent<PlayerController>().TakeDamage(enemy.enemyDamage);
         }
     }
