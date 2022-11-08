@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroId: hero_Andres
   heroName: Andres Bonifacio
+  heroPrefab: {fileID: 4037954190184787634, guid: 2914e29f322a492488d4210de2142407, type: 3}
   isHeroUnlocked: 1
   heroClass: 0
   currentHealth: 0

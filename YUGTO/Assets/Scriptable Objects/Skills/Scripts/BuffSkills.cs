@@ -7,4 +7,6 @@ public class BuffSkills : Abilities
 {
     public float HealAmount;
     public GameObject skillButtonPrefab;
+    public float attackAddition;
+    public float buffDuration;
 }

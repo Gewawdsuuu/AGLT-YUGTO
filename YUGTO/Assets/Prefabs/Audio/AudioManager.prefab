@@ -59,6 +59,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 70763446d7935854fb02ac3365595bf3, type: 3}
   - name: Arcane Battle Music
     clip: {fileID: 8300000, guid: 2a979b830bd6b104abd583d652e92f44, type: 3}
+  - name: Quiz Music
+    clip: {fileID: 8300000, guid: 62e0827feab058746b2cc367d2fdefd9, type: 3}
   sfxSounds:
   - name: Character Death
     clip: {fileID: 8300000, guid: 9dd3f87f1e4a24f4c9d7e7b97830f95e, type: 3}

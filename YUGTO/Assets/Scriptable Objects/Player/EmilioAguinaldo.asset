@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroId: hero_Emilio
   heroName: Emilio Aguinaldo
+  heroPrefab: {fileID: 8465336309924281907, guid: eeae1fca917dd824b98a39b3e9b25950, type: 3}
   isHeroUnlocked: 1
   heroClass: 1
   currentHealth: 0

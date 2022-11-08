@@ -55,6 +55,10 @@ public class AudioManager : MonoBehaviour
         {
             isMainMenuMusicPlayed = false;
         }
+        else if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            isMainMenuMusicPlayed = false;
+        }
     }
 
     public void PlayMusic(string name)

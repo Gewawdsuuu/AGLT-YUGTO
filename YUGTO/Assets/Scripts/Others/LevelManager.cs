@@ -20,18 +20,31 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.Instance.PlayMusic("Arcane Battle Music");
+        if (SceneManager.GetActiveScene().name == "Level 1" || SceneManager.GetActiveScene().name == "Level 2" || SceneManager.GetActiveScene().name == "Level 3")
+            AudioManager.Instance.PlayMusic("Arcane Battle Music");
+        else if (SceneManager.GetActiveScene().name == "Level 4" || SceneManager.GetActiveScene().name == "Level 5" || SceneManager.GetActiveScene().name == "Level 6" || SceneManager.GetActiveScene().name == "Level 7")
+            AudioManager.Instance.PlayMusic("Battle Music 1");
+        else if (SceneManager.GetActiveScene().name == "Level 8" || SceneManager.GetActiveScene().name == "Level 9" || SceneManager.GetActiveScene().name == "Level 10")
+            AudioManager.Instance.PlayMusic("Arcane Battle Music");
+
 
         levelsUnlocked = PlayFabManager.levelsUnlocked;
 
         if (SceneManager.GetActiveScene().name != "Level 1")
             currentLevel = int.Parse(HeroSelection.levelName);
+
+        Debug.Log("Current Level: " + currentLevel);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0  && levelDone == false)
+        CheckLevel();
+        StartCoroutine(CheckLevelInterval());
+    }
+
+    public void CheckLevel()
+    {
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0 && levelDone == false)
         {
             levelDone = true;
             LevelComplete();
@@ -43,9 +56,20 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    IEnumerator CheckLevelInterval()
+    {
+        yield return new WaitForSeconds(5f);
+    }
+
     private void LevelComplete()
     {
-        AudioManager.Instance.StopMusic("Arcane Battle Music");
+        if (SceneManager.GetActiveScene().name == "Level 1" || SceneManager.GetActiveScene().name == "Level 2" || SceneManager.GetActiveScene().name == "Level 3")
+            AudioManager.Instance.StopMusic("Arcane Battle Music");
+        else if (SceneManager.GetActiveScene().name == "Level 4" || SceneManager.GetActiveScene().name == "Level 5" || SceneManager.GetActiveScene().name == "Level 6" || SceneManager.GetActiveScene().name == "Level 7")
+            AudioManager.Instance.StopMusic("Battle Music 1");
+        else if (SceneManager.GetActiveScene().name == "Level 8" || SceneManager.GetActiveScene().name == "Level 9" || SceneManager.GetActiveScene().name == "Level 10")
+            AudioManager.Instance.StopMusic("Arcane Battle Music");
+
         AudioManager.Instance.PlaySFX("Level Cleared");
         if (levelsUnlocked <= (currentLevel + 1))
         {
@@ -58,7 +82,13 @@ public class LevelManager : MonoBehaviour
 
     private void LevelFailed()
     {
-        AudioManager.Instance.StopMusic("Arcane Battle Music");
+        if (SceneManager.GetActiveScene().name == "Level 1" || SceneManager.GetActiveScene().name == "Level 2" || SceneManager.GetActiveScene().name == "Level 3")
+            AudioManager.Instance.StopMusic("Arcane Battle Music");
+        else if (SceneManager.GetActiveScene().name == "Level 4" || SceneManager.GetActiveScene().name == "Level 5" || SceneManager.GetActiveScene().name == "Level 6" || SceneManager.GetActiveScene().name == "Level 7")
+            AudioManager.Instance.StopMusic("Battle Music 1");
+        else if (SceneManager.GetActiveScene().name == "Level 8" || SceneManager.GetActiveScene().name == "Level 9" || SceneManager.GetActiveScene().name == "Level 10")
+            AudioManager.Instance.StopMusic("Arcane Battle Music");
+
         AudioManager.Instance.PlaySFX("Level Failed");
         blurImage.SetActive(true);
         levelFailedPanel.SetActive(true);
@@ -97,15 +127,15 @@ public class LevelManager : MonoBehaviour
 
     public void OnNextCutsceneSelect()
     {
-        if (currentLevel == 2)
+        if (currentLevel == 3)
         {
             SceneManager.LoadScene("CutsceneLevel1Ending");
         }
-        else if (currentLevel == 6)
+        else if (currentLevel == 7)
         {
             SceneManager.LoadScene("CutsceneLevel4Ending");
         }
-        else if (currentLevel == 9)
+        else if (currentLevel == 10)
         {
             SceneManager.LoadScene("CutsceneLevel8Ending");
         }
