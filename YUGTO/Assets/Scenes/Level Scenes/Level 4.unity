@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 25125de82a303434cbc9537e55ffc72b, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -14211,7 +14211,7 @@ GameObject:
   - component: {fileID: 559169491}
   - component: {fileID: 559169490}
   m_Layer: 0
-  m_Name: w
+  m_Name: NoonCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19517,7 +19517,7 @@ GameObject:
   - component: {fileID: 777176917}
   - component: {fileID: 777176918}
   m_Layer: 0
-  m_Name: MRNDirectLight
+  m_Name: NoonDirectLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
