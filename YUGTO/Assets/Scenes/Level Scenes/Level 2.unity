@@ -16090,7 +16090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuPanel: {fileID: 715029379}
   blurImage: {fileID: 253452382}
-  skillsPanel: {fileID: 0}
+  skillsPanel: {fileID: 1189615393}
 --- !u!114 &1945499387
 MonoBehaviour:
   m_ObjectHideFlags: 0
