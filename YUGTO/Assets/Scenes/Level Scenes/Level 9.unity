@@ -2512,7 +2512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249448079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -135, y: -14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2554,7 +2554,7 @@ Camera:
   far clip plane: 3582.7
   field of view: 60
   orthographic: 1
-  orthographic size: 170
+  orthographic size: 124.89325
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2812,7 +2812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256455251}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -432, y: 55, z: 0}
+  m_LocalPosition: {x: -525.2, y: 55, z: 0}
   m_LocalScale: {x: 321.1061, y: 25.511423, z: 53.282}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7713,7 +7713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730957314}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 197, y: 55, z: 0}
+  m_LocalPosition: {x: 244.7, y: 55, z: 0}
   m_LocalScale: {x: 321.1061, y: 25.511423, z: 53.282}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14634,14 +14634,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309037388}
-  m_LocalRotation: {x: -0.110121116, y: -0, z: -0, w: 0.99391824}
+  m_LocalRotation: {x: -0.10114285, y: -0, z: -0, w: 0.9948719}
   m_LocalPosition: {x: -156.10004, y: -60.8894, z: 880.0104}
   m_LocalScale: {x: 80.16487, y: 80.16488, z: 116.011696}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 764574684}
   m_RootOrder: 147
-  m_LocalEulerAnglesHint: {x: -12.645, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -11.61, y: 0, z: 0}
 --- !u!64 &1309037390
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15225,6 +15225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuPanel: {fileID: 763863517}
   blurImage: {fileID: 477176907}
+  skillsPanel: {fileID: 0}
 --- !u!114 &1349991182
 MonoBehaviour:
   m_ObjectHideFlags: 0
