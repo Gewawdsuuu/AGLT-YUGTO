@@ -15600,6 +15600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuPanel: {fileID: 715029379}
   blurImage: {fileID: 253452382}
+  skillsPanel: {fileID: 0}
 --- !u!114 &1945499387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17420,7 +17421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4628409827923012, guid: c60839d5374ca364a96378433d932845, type: 3}
       propertyPath: m_LocalScale.x
-      value: 53.664963
+      value: 81.28632
       objectReference: {fileID: 0}
     - target: {fileID: 4628409827923012, guid: c60839d5374ca364a96378433d932845, type: 3}
       propertyPath: m_LocalScale.y
@@ -17432,15 +17433,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4628409827923012, guid: c60839d5374ca364a96378433d932845, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 276.67
+      value: 266.5
       objectReference: {fileID: 0}
     - target: {fileID: 4628409827923012, guid: c60839d5374ca364a96378433d932845, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 89.7
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4628409827923012, guid: c60839d5374ca364a96378433d932845, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 194.11
+      value: 197.7
       objectReference: {fileID: 0}
     - target: {fileID: 4628409827923012, guid: c60839d5374ca364a96378433d932845, type: 3}
       propertyPath: m_LocalRotation.w
