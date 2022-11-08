@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
     [Header("Attacking Parameters")]
     [SerializeField] private GameObject attackArea;
     [SerializeField] private float timeToAttack;
-    [SerializeField] private float playerDamage;
+    public float playerDamage;
     [SerializeField] private bool attacking = false;
     public LayerMask enemyLayers;
 
@@ -56,8 +56,6 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (attacking)
@@ -68,5 +66,15 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
+    }
+
+    public void AddDamage(float damage)
+    {
+        playerDamage = playerDamage + damage;
+    }
+
+    public void SetDamage(float damage)
+    {
+        playerDamage = damage;
     }
 }

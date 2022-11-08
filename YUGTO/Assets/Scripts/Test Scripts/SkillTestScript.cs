@@ -6,19 +6,19 @@ public class SkillTestScript : MonoBehaviour
 {
     public GameObject skillPrefab;
 
-    public List<GameObject> enemyGameObjects = new List<GameObject>();
+    public List<GameObject> playerGameObjects = new List<GameObject>();
 
     private void Start()
     {
-        GameObject newPurifyObject;
-        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Enemy"))
+        GameObject newBoostMoraleObject;
+        foreach (GameObject fooObj in GameObject.FindGameObjectsWithTag("Player"))
         {
-            enemyGameObjects.Add(fooObj);
+            playerGameObjects.Add(fooObj);
         }
 
-        for (int i = 0; i < enemyGameObjects.Count; i++)
+        for (int i = 0; i < playerGameObjects.Count; i++)
         {
-            newPurifyObject = Instantiate(skillPrefab, new Vector3(enemyGameObjects[i].transform.position.x, enemyGameObjects[i].transform.position.y, enemyGameObjects[i].transform.position.z), transform.rotation);
+            newBoostMoraleObject = Instantiate(skillPrefab, new Vector3((playerGameObjects[i].transform.position.x + 1), playerGameObjects[i].transform.position.y, playerGameObjects[i].transform.position.z), transform.rotation);
         }
     }
 
