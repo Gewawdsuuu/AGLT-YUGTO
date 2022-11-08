@@ -2493,16 +2493,15 @@ MonoBehaviour:
     - Dimasalang
     - Laong Laan
     - Pepe
-    correctAnswer: 2
-  - question: Jose Rizal and Marcelo Del Pilar had a rivalry on who will become the
-      next leader, the Responsable, of La Solidaridad. What was the term used for
-      the faction favoring Del Pilar?
-    answers:
-    - Pladeristas
-    - Pilaristas
-    - Pilaritas
-    - Plaridelista
     correctAnswer: 3
+  - question: Jose Rizal and Marcelo Del Pilar has a rivalry on who will become the
+      next leader of La Solidaridad. What was the term used for so-colled leader?
+    answers:
+    - Responsible
+    - Responsable
+    - Resonable
+    - Resonable
+    correctAnswer: 2
   - question: "After the execution of the GomBurZa, a propaganda was sparked by Mariano
       Ponce, Marcelo Del Pilar, and Jose Rizal. What was the term used for \u201Cthe
       enlightened ones\u201D like them?"
