@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &125440091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125440092}
+  m_Layer: 0
+  m_Name: DamageTextSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &125440092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125440091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9, y: 0.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 192139453866346994}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192139452990272533
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +234,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192139453866346985}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.8, y: 8.4, z: 0}
   m_LocalScale: {x: 4.414736, y: 4.414736, z: 4.414736}
   m_ConstrainProportionsScale: 0
@@ -211,6 +242,7 @@ Transform:
   - {fileID: 2911961172736552284}
   - {fileID: 192139453271328517}
   - {fileID: 192139452990272528}
+  - {fileID: 125440092}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -274,11 +306,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: {fileID: 11400000, guid: 898cf5c276e1c004f8e3e66d85aac9aa, type: 2}
-  maxHealth: 0
+  maxHealth: 200
   floatingTextPrefab: {fileID: 9201720336315999016, guid: ae2a568567129d64f9ab2dd06dd3f23f, type: 3}
+  floatingDamagePrefab: {fileID: 6376880640398675656, guid: 5c5160cd6f6a016488c33306c97e337d, type: 3}
+  damageTextSpawnPoint: {fileID: 125440091}
   healthBar: {fileID: 192139454772699957}
-  minimumGoldDrop: 0
-  maximumGoldDrop: 0
+  isDead: 0
+  minimumGoldDrop: 10
+  maximumGoldDrop: 20
 --- !u!114 &192139453866346998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,7 +334,7 @@ MonoBehaviour:
   attackArea: {fileID: 192139452990272533}
   timeToAttack: 1
   timer: 0
-  enemyDamage: 0
+  enemyDamage: 20
   attacking: 0
 --- !u!1 &192139454555233151
 GameObject:

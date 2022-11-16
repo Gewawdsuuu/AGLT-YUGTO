@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2938131547027543925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6693815124294240307}
+  m_Layer: 0
+  m_Name: DamageTextSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6693815124294240307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2938131547027543925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.33, y: 0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5758456712312907652}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5758456711123874867
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +505,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5758456712038572592}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9670595, w: 0.25455067}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9670593, w: 0.2545513}
   m_LocalPosition: {x: 0.084522516, y: -0.34714764, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -656,6 +687,7 @@ Transform:
   - {fileID: 5758456712237798871}
   - {fileID: 5758456711403523811}
   - {fileID: 6498434696934076137}
+  - {fileID: 6693815124294240307}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -741,8 +773,8 @@ MonoBehaviour:
   - {fileID: 5758456711813361649}
   - {fileID: 5758456712443302500}
   m_Bounds:
-    m_Center: {x: 0.09249306, y: -0.00025975704, z: 0}
-    m_Extent: {x: 1.1092801, y: 1.64118, z: 0}
+    m_Center: {x: 0.09249258, y: -0.00025987625, z: 0}
+    m_Extent: {x: 1.1092796, y: 1.64118, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -855,6 +887,8 @@ MonoBehaviour:
   hero: {fileID: 11400000, guid: bf90e7020eee7f04fbc1465c33ee636f, type: 2}
   deathEffectPrefab: {fileID: 7272625924093134376, guid: 736a5286189fbab429cdcf7b08feff8c, type: 3}
   isDead: 0
+  floatingDamagePrefab: {fileID: 6376880640398675656, guid: 5c5160cd6f6a016488c33306c97e337d, type: 3}
+  damageTextSpawnPoint: {fileID: 2938131547027543925}
   moveSpeed: 0
   maxHealth: 0
   currentHealth: 0
@@ -1040,7 +1074,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5758456712397094710}
-  m_LocalRotation: {x: -0, y: -0, z: -0.019734917, w: 0.9998053}
+  m_LocalRotation: {x: -0, y: -0, z: -0.019735595, w: 0.9998053}
   m_LocalPosition: {x: 0.24019669, y: -0.00000017625372, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

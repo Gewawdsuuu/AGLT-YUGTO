@@ -1005,6 +1005,7 @@ Transform:
   - {fileID: 4292741359879597610}
   - {fileID: 4292741359574903327}
   - {fileID: 981002059951818537}
+  - {fileID: 5389039130595121368}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1090,7 +1091,7 @@ MonoBehaviour:
   - {fileID: 4292741359051923550}
   - {fileID: 4292741359775378278}
   m_Bounds:
-    m_Center: {x: 0.18215787, y: -0.00043344498, z: 0}
+    m_Center: {x: 0.18215883, y: -0.00043344498, z: 0}
     m_Extent: {x: 1.0517654, y: 1.6125302, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1204,6 +1205,8 @@ MonoBehaviour:
   hero: {fileID: 11400000, guid: 6715a8f7f37334d47ae5ac330a8aecc8, type: 2}
   deathEffectPrefab: {fileID: 7272625924093134376, guid: 736a5286189fbab429cdcf7b08feff8c, type: 3}
   isDead: 0
+  floatingDamagePrefab: {fileID: 6376880640398675656, guid: 5c5160cd6f6a016488c33306c97e337d, type: 3}
+  damageTextSpawnPoint: {fileID: 5332195075208090106}
   moveSpeed: 0
   maxHealth: 0
   currentHealth: 0
@@ -1294,7 +1297,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292741358697524607}
-  m_LocalRotation: {x: -0, y: -0, z: -0.03520246, w: 0.99938023}
+  m_LocalRotation: {x: -0, y: -0, z: -0.035197232, w: 0.9993804}
   m_LocalPosition: {x: 0.29806927, y: 0.0000013922167, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1390,7 +1393,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292741359009777784}
-  m_LocalRotation: {x: -0, y: -0, z: -0.007828365, w: 0.99996936}
+  m_LocalRotation: {x: -0, y: -0, z: -0.007826412, w: 0.99996936}
   m_LocalPosition: {x: 0.21714063, y: -0.00000009257162, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1421,7 +1424,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292741359051923521}
-  m_LocalRotation: {x: -0, y: -0, z: -0.6360867, w: 0.7716176}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6360893, w: 0.77161545}
   m_LocalPosition: {x: 0.2793539, y: 0.000001196825, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1614,7 +1617,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292741359283306377}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9999286, w: 0.011949044}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9999286, w: 0.0119532095}
   m_LocalPosition: {x: -0.047935467, y: -0.20463043, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1708,7 +1711,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292741359511865063}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9745443, w: 0.22419512}
+  m_LocalRotation: {x: 0, y: 0, z: 0.97454387, w: 0.22419702}
   m_LocalPosition: {x: 0.13630217, y: 0.24411443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1836,7 +1839,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292741359695671114}
-  m_LocalRotation: {x: 0, y: 0, z: 0.0076904, w: 0.9999705}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0076979506, w: 0.9999704}
   m_LocalPosition: {x: 0.22740962, y: 0.0005476251, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2125,7 +2128,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292741360441126287}
-  m_LocalRotation: {x: 0, y: 0, z: -0.97804445, w: 0.20839645}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9780455, w: 0.20839132}
   m_LocalPosition: {x: 0.17594293, y: -0.2997165, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2134,3 +2137,34 @@ Transform:
   m_Father: {fileID: 4292741360178296446}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -155.946}
+--- !u!1 &5332195075208090106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5389039130595121368}
+  m_Layer: 0
+  m_Name: DamageTextSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5389039130595121368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5332195075208090106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.21, y: 0.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4292741358578107943}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

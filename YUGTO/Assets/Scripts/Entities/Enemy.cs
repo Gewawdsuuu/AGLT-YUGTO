@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     [Header("Enemy Parameters")]
     [SerializeField] private float maxHealth;
     [SerializeField] private GameObject floatingTextPrefab;
+    [SerializeField] private GameObject floatingDamagePrefab;
+    [SerializeField] private GameObject damageTextSpawnPoint;
 
     private float currentHealth;
     public HealthBar healthBar;
@@ -36,6 +38,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        ShowDamage(damage.ToString());
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         Debug.Log("Current Health: " + currentHealth);
@@ -77,6 +80,15 @@ public class Enemy : MonoBehaviour
         {
             GameObject prefab = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
             prefab.GetComponentInChildren<TextMesh>().text = text;
+        }
+    }
+
+    private void ShowDamage(string text)
+    {
+        if (floatingDamagePrefab)
+        {
+            GameObject prefab = Instantiate(floatingDamagePrefab, damageTextSpawnPoint.transform.position, Quaternion.identity);
+            prefab.GetComponentInChildren<TextMesh>().text =  "-" + text;
         }
     }
 

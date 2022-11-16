@@ -51,6 +51,8 @@ public class StarShowerPrefabScript : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Enemy>().TakeDamage(projectileSkills.abilityDamage);
+            skillAnimator.SetBool("isIdle", false);
+            StartCoroutine(WaitBeforeDestroy());
         }
     }
 

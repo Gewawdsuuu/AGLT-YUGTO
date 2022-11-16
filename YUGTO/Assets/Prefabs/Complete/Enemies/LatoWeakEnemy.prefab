@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1400529591076361443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2947921315031539054}
+  m_Layer: 0
+  m_Name: DamageTextSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2947921315031539054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400529591076361443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.74, y: 1.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1463138726669415933}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1463138724718636855
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: 0f276a8d82ccd9940a00f1d7e37f1121, type: 2}
+  enemyAI: {fileID: 1463138726669415809}
 --- !u!1 &1463138725098622243
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,11 +559,12 @@ Transform:
   m_GameObject: {fileID: 1463138726669415808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.839, y: 5, z: 0.011551}
-  m_LocalScale: {x: 4.875055, y: 4.875055, z: 4.875055}
+  m_LocalScale: {x: 3.6685276, y: 3.6685276, z: 3.6685276}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8978142440640480215}
   - {fileID: 1463138724718636853}
+  - {fileID: 2947921315031539054}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -595,9 +628,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: {fileID: 11400000, guid: 0f276a8d82ccd9940a00f1d7e37f1121, type: 2}
-  maxHealth: 0
+  maxHealth: 264
   floatingTextPrefab: {fileID: 9201720336315999016, guid: ae2a568567129d64f9ab2dd06dd3f23f, type: 3}
+  floatingDamagePrefab: {fileID: 6376880640398675656, guid: 5c5160cd6f6a016488c33306c97e337d, type: 3}
+  damageTextSpawnPoint: {fileID: 1400529591076361443}
   healthBar: {fileID: 1463138725162956226}
+  isDead: 0
   minimumGoldDrop: 50
   maximumGoldDrop: 100
 --- !u!114 &1463138726669415809
@@ -618,9 +654,9 @@ MonoBehaviour:
   minimumDistance: 20
   animator: {fileID: 8978142440640480232}
   attackArea: {fileID: 1463138724718636855}
-  timeToAttack: 1
+  timeToAttack: 2
   timer: 0
-  enemyDamage: 0
+  enemyDamage: 25
   attacking: 0
 --- !u!1 &8978142439552272801
 GameObject:
@@ -772,7 +808,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8978142439766570093}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9994451, w: 0.03331002}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99944514, w: 0.033309784}
   m_LocalPosition: {x: -0.3257384, y: -0.036025092, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -956,8 +992,8 @@ MonoBehaviour:
   - {fileID: 8978142440120123140}
   - {fileID: 8978142440821016641}
   m_Bounds:
-    m_Center: {x: 0.00000011920929, y: 0.002606392, z: 0}
-    m_Extent: {x: 0.85000014, y: 2.0740602, z: 0}
+    m_Center: {x: -0.0000005364418, y: 0.002606392, z: 0}
+    m_Extent: {x: 0.8500001, y: 2.0740604, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1022,7 +1058,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8978142440821016640}
-  m_LocalRotation: {x: -0, y: -0, z: -0.8069219, w: 0.5906583}
+  m_LocalRotation: {x: -0, y: -0, z: -0.80692166, w: 0.5906585}
   m_LocalPosition: {x: 0.32804167, y: -0.00000004337509, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

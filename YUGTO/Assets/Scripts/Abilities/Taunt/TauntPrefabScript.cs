@@ -42,7 +42,8 @@ public class TauntPrefabScript : MonoBehaviour
     {
         for (int i = 0; i < enemiesGameObject.Length; i++)
         {
-            enemiesGameObject[i].GetComponent<EnemyAI>().target = newTarget;
+            if (enemiesGameObject[i] != null)
+                enemiesGameObject[i].GetComponent<EnemyAI>().target = newTarget;
         }
     }
 

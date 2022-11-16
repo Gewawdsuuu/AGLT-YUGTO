@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     private float moveHorizontal;
     public bool isDead = false;
 
+    [SerializeField] private GameObject floatingDamagePrefab;
+    [SerializeField] private GameObject damageTextSpawnPoint;
+
     [Header("Player Parameters")]
     [SerializeField] private float moveSpeed;
     public float maxHealth;
@@ -93,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        ShowDamage(damage.ToString());
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         Debug.Log("Current Player Health: " + currentHealth);
@@ -105,6 +109,15 @@ public class PlayerController : MonoBehaviour
             isDead = true;
             Die();
             currentHealth = 0;
+        }
+    }
+
+    private void ShowDamage(string text)
+    {
+        if (floatingDamagePrefab)
+        {
+            GameObject prefab = Instantiate(floatingDamagePrefab, damageTextSpawnPoint.transform.position, Quaternion.identity);
+            prefab.GetComponentInChildren<TextMesh>().text = "-" + text;
         }
     }
 

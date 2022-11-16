@@ -354,8 +354,8 @@ MonoBehaviour:
   - {fileID: 2204988174058278185}
   - {fileID: 2204988174809437208}
   m_Bounds:
-    m_Center: {x: 0.00000023841858, y: -0.0004966259, z: 0}
-    m_Extent: {x: 3.176668, y: 2.8546839, z: 0}
+    m_Center: {x: 0.00000071525574, y: -0.0004963875, z: 0}
+    m_Extent: {x: 3.1766684, y: 2.8546839, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -821,6 +821,7 @@ Transform:
   - {fileID: 2204988173513878590}
   - {fileID: 3962976736399691826}
   - {fileID: 3962976735609190344}
+  - {fileID: 5824820487436789050}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -886,6 +887,8 @@ MonoBehaviour:
   enemyType: {fileID: 11400000, guid: 5757427eea0a16d4fb1235a7f98571ef, type: 2}
   maxHealth: 700
   floatingTextPrefab: {fileID: 9201720336315999016, guid: ae2a568567129d64f9ab2dd06dd3f23f, type: 3}
+  floatingDamagePrefab: {fileID: 6376880640398675656, guid: 5c5160cd6f6a016488c33306c97e337d, type: 3}
+  damageTextSpawnPoint: {fileID: 6896729517791460464}
   healthBar: {fileID: 3962976735661617590}
   isDead: 0
   minimumGoldDrop: 250
@@ -1411,3 +1414,34 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6896729517791460464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5824820487436789050}
+  m_Layer: 0
+  m_Name: DamageTextSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5824820487436789050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6896729517791460464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.2, y: 6.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3962976735115287508}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
