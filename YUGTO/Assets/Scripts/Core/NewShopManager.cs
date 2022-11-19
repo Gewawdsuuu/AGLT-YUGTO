@@ -210,4 +210,9 @@ public class NewShopManager : MonoBehaviour
             manaTotalText.text = "Total: " + (price * numberOfMana).ToString();
         }
     }
+
+    public void ExitShopClick()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
