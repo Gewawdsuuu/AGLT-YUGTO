@@ -284,7 +284,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3952484659070065904}
-  m_LocalRotation: {x: -0, y: -0, z: -0.09384589, w: 0.9955868}
+  m_LocalRotation: {x: -0, y: -0, z: -0.093847945, w: 0.9955866}
   m_LocalPosition: {x: 0.27204964, y: 0.0000001698272, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -315,7 +315,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3952484659243117396}
-  m_LocalRotation: {x: -0, y: -0, z: -0.61568385, w: 0.7879934}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6156829, w: 0.78799397}
   m_LocalPosition: {x: 0.30132023, y: 0.00000010434332, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -665,7 +665,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3952484659718289466}
-  m_LocalRotation: {x: 0, y: 0, z: 0.0008326643, w: 0.99999964}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00083147746, w: 0.99999964}
   m_LocalPosition: {x: 0.21204011, y: -0.00000003684479, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -697,7 +697,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3952484659835121524}
-  m_LocalRotation: {x: 0, y: 0, z: -0.968875, w: 0.24755071}
+  m_LocalRotation: {x: 0, y: 0, z: -0.96887445, w: 0.24755271}
   m_LocalPosition: {x: 0.22631182, y: -0.3213349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -729,7 +729,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3952484659858806003}
-  m_LocalRotation: {x: 0, y: 0, z: 0.99994445, w: 0.010540334}
+  m_LocalRotation: {x: 0, y: 0, z: 0.99994445, w: 0.010539687}
   m_LocalPosition: {x: 0.0071513373, y: 0.19612446, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -756,9 +756,10 @@ GameObject:
   - component: {fileID: 3952484659915275337}
   - component: {fileID: 3952484659915275336}
   - component: {fileID: 3952484659915275340}
+  - component: {fileID: 1864451945}
   m_Layer: 0
   m_Name: AntonioLuna
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -870,7 +871,7 @@ MonoBehaviour:
   - {fileID: 3952484659243117399}
   - {fileID: 3952484659559683065}
   m_Bounds:
-    m_Center: {x: 0.4999864, y: -0.00000166893, z: 0}
+    m_Center: {x: 0.4999864, y: -0.0000015497208, z: 0}
     m_Extent: {x: 1.4787009, y: 1.6500025, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1032,6 +1033,25 @@ MonoBehaviour:
   manaBar: {fileID: 4412829030053513946}
   tauntSpawnPoint: {fileID: 4412829029430873440}
   skillsPanel: {fileID: 0}
+--- !u!114 &1864451945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3952484659915275316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239d9a286dbebc344b68a743392cc3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: 344e4a0f7b521784f8cf0336b050ecec, type: 2}
+  ability1Image: {fileID: 0}
+  playerController: {fileID: 3952484659915275337}
+  manacostText: {fileID: 0}
+  manaBar: {fileID: 4412829030053513946}
+  iraSpawnPoint: {fileID: 4412829029430873440}
+  skillsPanel: {fileID: 0}
 --- !u!1 &3952484659919856211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +1107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3952484660007539327}
-  m_LocalRotation: {x: -0, y: -0, z: -0.6319754, w: 0.7749884}
+  m_LocalRotation: {x: -0, y: -0, z: -0.63197595, w: 0.774988}
   m_LocalPosition: {x: 0.2678983, y: 0.000000044536307, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

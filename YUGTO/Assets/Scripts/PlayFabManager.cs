@@ -101,7 +101,7 @@ public class PlayFabManager : MonoBehaviour
     void OnGetUserInventorySuccess(GetUserInventoryResult result)
     {
         goldValue = result.VirtualCurrency["GD"];
-        PlayFabShopManager.goldValue = goldValue;
+        NewShopManager.goldValue = goldValue;
     }
     #endregion
 

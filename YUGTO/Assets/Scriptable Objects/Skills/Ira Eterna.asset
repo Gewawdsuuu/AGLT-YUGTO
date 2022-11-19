@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6abdea8bf0eb0274d9ebb62e87f94684, type: 3}
+  m_Name: Ira Eterna
+  m_EditorClassIdentifier: 
+  abilityName: Undying Rage
+  abilityLevel: 1
+  abilityDamage: 0
+  abilityCooldown: 30
+  abilityManacost: 50
+  abilityPrefab: {fileID: 2374194751125769156, guid: d094273de3b8e3b4893e493d877545b3, type: 3}
+  HealAmount: 20
+  skillButtonPrefab: {fileID: 5425262450412096259, guid: 108a61d64603f5e4e9310c65ea85d69c, type: 3}
+  attackAddition: 0
+  buffDuration: 4
