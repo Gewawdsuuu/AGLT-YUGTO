@@ -764,8 +764,8 @@ MonoBehaviour:
     Fusce vitae scelerisque nulla. Cras id nisl mi. Aliquam volutpat scelerisque
     eros, commodo pellentesque '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 78a7d277ca5901340952b73440b62732, type: 2}
-  m_sharedMaterial: {fileID: -4282559551268955048, guid: 78a7d277ca5901340952b73440b62732, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5eb1db78cc0f41144b031056e7601e90, type: 2}
+  m_sharedMaterial: {fileID: 1426789793702899393, guid: 5eb1db78cc0f41144b031056e7601e90, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.6
+  m_fontSize: 22.75
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1418,8 +1418,8 @@ MonoBehaviour:
   - Taunt
   defaultSkill2Description: {fileID: 188348870}
   newSkill2Description:
-  - Throws a huge sprea that damages enemies in a line.
-  - t Fires 2 bullets that damage enemies in a line.
+  - Throws a huge spear that damages enemies in a line.
+  - Fires 2 bullets that damage enemies in a line.
   - Deal damage to all enemies in the area
   - Traps all enemies in an area with ink while dealing damage per second.
   - Revives a fallen ally to % health points.
